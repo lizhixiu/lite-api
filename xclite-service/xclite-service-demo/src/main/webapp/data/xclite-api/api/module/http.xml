@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api-group id="http" name="http模块" path="/module/http">
+    <api id="test" method="GET" name="测试" path="/test">
+        <script><![CDATA[
+         import http;
+            return http.connect('http://127.0.0.1:8088/base/script/readme').get();
+        ]]></script>
+    </api>
+</api-group>

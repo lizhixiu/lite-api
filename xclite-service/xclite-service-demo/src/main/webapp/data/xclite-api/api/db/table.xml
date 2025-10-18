@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<api-group id="dbTable" name="使用Table" path="/db/table">
+    <api id="list" name="查询列表" method="GET" path="/list">
+        <script>
+           return db.table('xclite_api_info')
+      //  .column('class_id') // 只查询api_name列
+        .select()
+        </script>
+    </api>
+    <api id="count" name="查询总数" method="GET" path="/count">
+        <script>
+           return db.table('xclite_api_info')
+      //  .column('class_id') // 只查询api_name列
+        .count()
+        </script>
+    </api>
+    <api id="page" name="分页查询" method="GET" path="/page">
+        <script>
+        return db.table('xclite_api_info').columns('table_code', 'table_name').page();
+        </script>
+    </api>
+    <api id="delete" name="删除数据" method="GET" path="/delete">
+        <script>
+        return db.table('xclite_api_info')
+        .where()
+        .eq('id', '1234')
+        .delete();
+        </script>
+    </api>
+    <api id="save" name="保存数据" method="GET" path="/save">
+        <script>
+        return db.table('xclite_api_info')
+            .primary('id', '123')
+            .save({
+                // 当id有值时是修改，否则是新增,新增时使用uuid作为主键
+                // id: 'c7076376afcb47cf80087f6c85a30296',
+                table_code: '123'
+            })
+        </script>
+    </api>
+    <api id="insert" name="新增数据" method="GET" path="/insert">
+        <script>
+        var tableName = null;
+        return db.table('xclite_api_info').primary('id').insert({
+            id: '123',
+            tableCode: '123',
+            tableName: tableName
+        })
+        </script>
+    </api>
+    <api id="update" name="更新数据" method="GET" path="/update">
+        <script>
+          return db.table('xclite_api_info').primary('id').update({
+                id: '123',
+                table_code: '666'
+            })
+        </script>
+    </api>
+</api-group>

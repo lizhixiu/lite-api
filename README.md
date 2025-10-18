@@ -23,15 +23,30 @@ XCLite API 借鉴了 [Magic-API](https://gitee.com/ssssssss-team/magic-api) 的�
 
 ## 示例项目
 
-- xclite-service-mock
-- xclite-service-web
+### xclite-service-mock 项目截图
+| <img src="docs/image/mock/scui/Snipaste_2025-10-18_23-21-40.png" alt="lite-api mock 1" width="350"> | <img src="docs/image/mock/scui/Snipaste_2025-10-18_23-21-41.png" alt="lite-api mock 2" width="350"> | <img src="docs/image/mock/scui/Snipaste_2025-10-18_23-25-25.png" alt="lite-api mock 3" width="350"> | <img src="docs/image/mock/scui/Snipaste_2025-10-18_23-25-34.png" alt="lite-api mock 4" width="350"> |
+|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| <img src="docs/image/mock/scui/Snipaste_2025-10-18_23-25-53.png" alt="lite-api mock 5" width="350"> | <img src="docs/image/mock/scui/Snipaste_2025-10-18_23-26-09.png" alt="lite-api mock 6" width="350"> | <img src="docs/image/mock/scui/Snipaste_2025-10-18_23-27-05.png" alt="lite-api mock 7" width="350"> | <img src="docs/image/mock/scui/Snipaste_2025-10-18_23-27-20.jpg" alt="lite-api mock 8" width="350"> |
+
+
+### xclite-service-demo 项目截图
+| <img src="docs/image/demo/db/SQL_分页.png" alt="SQL_分页" width="350" height="200"> | <img src="docs/image/demo/db/SQL_列表.png" alt="SQL_列表" width="350" height="200"> | <img src="docs/image/demo/db/SQL_查询单值.png" alt="SQL_查询单值" width="350" height="200"> | <img src="docs/image/demo/db/SQL_查询数值.png" alt="SQL_查询数值" width="350" height="200"> |
+|----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| <img src="docs/image/demo/db/Table_分页.png" alt="Table_分页" width="350" height="200"> | <img src="docs/image/demo/db/Table_列表.png" alt="lite-api db 2" width="350" height="200"> | <img src="docs/image/demo/db/Table_删除.png" alt="Table_删除" width="350" height="200"> | <img src="docs/image/demo/db/Table_数目.png" alt="Table_数目" width="350" height="200"> |
+| <img src="docs/image/demo/db/OTHER_事务.png" alt="OTHER_事务" width="350" height="200"> | <img src="docs/image/demo/db/OTHER_多数据源.png" alt="OTHER_多数据源" width="350" height="200"> | <img src="docs/image/demo/db/OTHER_缓存.png" alt="OTHER_缓存" width="350" height="200"> | <img src="docs/image/demo/db/OTHER_驼峰.png" alt="OTHER_驼峰" width="350" height="200"> |
+
+### xclite-api 结合ide ai ( Qoder TRAE 插件)开发功能截图
+| <img src="docs/image/ai/demo/qoder.jpg" alt="qoder" width="350" height="200">| <img src="docs/image/ai/demo/api代码自动生成.jpg" alt="api代码自动生成" width="350" height="200">  | <img src="docs/image/ai/demo/trae自动提示.png" alt="trae自动提示" width="350" height="200"> | <img src="docs/image/ai/demo/展示效果.jpg" alt="展示效果" width="350" height="200"> |
+|---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+
+
 
 ## 交流
 
-| 微信群                                                       | QQ群                                                                                                        |
-|-----------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| <img src="doc/image/joinus/WechatIMG257.jpg" alt="作者微信" width="350"> | <img src="doc/image/joinus/qq-group-qrcode.png" alt="QQ群" width="350">                                     |
-| 备注：加群，邀您加入群聊                                              | <a href="https://qm.qq.com/cgi-bin/qm/qr?k=7955497&jump_from=webapi" target="_blank">点击加入 QQ 群：7955497</a> |
+| 微信群                                                                   | QQ群                                                                                                        |
+|-----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| <img src="docs/image/joinus/wx-group-qrcode.jpg" alt="作者微信" width="350"> | <img src="docs/image/joinus/qq-group-qrcode.png" alt="QQ群" width="350">                                    |
+| 备注：加群，邀您加入群聊                                                          | <a href="https://qm.qq.com/cgi-bin/qm/qr?k=7955497&jump_from=webapi" target="_blank">点击加入 QQ 群：7955497</a> |
 
 ## License
 

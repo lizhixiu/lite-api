@@ -13,8 +13,7 @@
     <name>xclite-service</name>
     <description>xclite service</description>
     <modules>
-        <module>xclite-service-web</module>
+        <module>xclite-service-demo</module>
         <module>xclite-service-mock</module>
-
     </modules>
 </project>

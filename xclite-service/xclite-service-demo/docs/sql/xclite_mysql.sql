@@ -1,0 +1,35 @@
+CREATE TABLE `xclite_api_info`
+(
+    `id`                  varchar(32) NOT NULL COMMENT '主键',
+    `class_id`            varchar(32)   DEFAULT NULL COMMENT '分类id',
+    `table_code`          varchar(32)   DEFAULT NULL COMMENT '表名',
+    `table_name`          varchar(128)  DEFAULT NULL COMMENT '表中文名',
+    `table_desc`          varchar(1024) DEFAULT NULL COMMENT '表描述',
+    `rec_en_status`       varchar(4)    DEFAULT NULL COMMENT '是否启用',
+    `rec_del_status`      varchar(4)    DEFAULT NULL COMMENT '是否删除',
+    `rec_sys_status`      varchar(4)    DEFAULT NULL COMMENT '是否系统保留',
+    `rec_sort`            decimal(5, 0) DEFAULT NULL COMMENT '排序号',
+    `rec_memo`            varchar(1024) DEFAULT NULL COMMENT '备注',
+    `rec_create_uid`      varchar(32)   DEFAULT NULL COMMENT '创建人ID',
+    `rec_create_uname`    varchar(64)   DEFAULT NULL COMMENT '创建人',
+    `rec_create_datetime` datetime      DEFAULT NULL COMMENT '创建时间',
+    `rec_update_uid`      varchar(32)   DEFAULT NULL COMMENT '更新人ID',
+    `rec_update_uname`    varchar(64)   DEFAULT NULL COMMENT '更新人',
+    `rec_update_datetime` datetime      DEFAULT NULL COMMENT '更新时间',
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='数据表';
+
+
+
+INSERT INTO `xclite_api_info` (`id`, `class_id`, `table_code`, `table_name`, `table_desc`, `rec_en_status`, `rec_del_status`, `rec_sys_status`, `rec_sort`, `rec_memo`, `rec_create_uid`, `rec_create_uname`, `rec_create_datetime`, `rec_update_uid`, `rec_update_uname`, `rec_update_datetime`) VALUES ('09eefc2286284374aeb00071aeb90781', '18a293ddee4f4aee8da80a35fda1e98a', 'IST_TASK', '巡检任务', NULL, '1', '0', '0', 1, NULL, '1', '轩晨', '2025-09-21 01:05:08', '1', '轩晨', '2025-09-21 01:05:20');
+INSERT INTO `xclite_api_info` (`id`, `class_id`, `table_code`, `table_name`, `table_desc`, `rec_en_status`, `rec_del_status`, `rec_sys_status`, `rec_sort`, `rec_memo`, `rec_create_uid`, `rec_create_uname`, `rec_create_datetime`, `rec_update_uid`, `rec_update_uname`, `rec_update_datetime`) VALUES ('0df90238c0334762bbf650b207d7081b', 'c6ce55f631d84141ac5376a0d97cbfc2', 'IST_POINT_CLASS', '巡检点分类', NULL, '1', '0', '0', 10, NULL, NULL, NULL, NULL, '1', '轩晨', '2025-09-20 11:10:09');
+INSERT INTO `xclite_api_info` (`id`, `class_id`, `table_code`, `table_name`, `table_desc`, `rec_en_status`, `rec_del_status`, `rec_sys_status`, `rec_sort`, `rec_memo`, `rec_create_uid`, `rec_create_uname`, `rec_create_datetime`, `rec_update_uid`, `rec_update_uname`, `rec_update_datetime`) VALUES ('11359e43dea649009d58e5f1bb924592', 'c6ce55f631d84141ac5376a0d97cbfc2', 'IST_ITEM_CLASS', '巡检项分类', NULL, '1', '0', '0', 20, NULL, '1', '轩晨', '2025-09-20 10:59:57', '1', '轩晨', '2025-09-20 11:12:11');
+INSERT INTO `xclite_api_info` (`id`, `class_id`, `table_code`, `table_name`, `table_desc`, `rec_en_status`, `rec_del_status`, `rec_sys_status`, `rec_sort`, `rec_memo`, `rec_create_uid`, `rec_create_uname`, `rec_create_datetime`, `rec_update_uid`, `rec_update_uname`, `rec_update_datetime`) VALUES ('4bd3cec636fb4e7aba907aa1020bea17', '18a293ddee4f4aee8da80a35fda1e98a', 'IST_TASK_POINT', '巡检任务点', NULL, '1', '0', '0', 2, NULL, '1', '轩晨', '2025-09-21 01:05:08', '1', '轩晨', '2025-09-21 01:05:25');
+INSERT INTO `xclite_api_info` (`id`, `class_id`, `table_code`, `table_name`, `table_desc`, `rec_en_status`, `rec_del_status`, `rec_sys_status`, `rec_sort`, `rec_memo`, `rec_create_uid`, `rec_create_uname`, `rec_create_datetime`, `rec_update_uid`, `rec_update_uname`, `rec_update_datetime`) VALUES ('645a705c36024cd488146f398176751c', 'c6ce55f631d84141ac5376a0d97cbfc2', 'IST_ITEM', '巡检项', NULL, '1', '0', '0', 26, NULL, '1', '轩晨', '2025-09-20 10:59:57', '1', '轩晨', '2025-09-20 11:00:30');
+INSERT INTO `xclite_api_info` (`id`, `class_id`, `table_code`, `table_name`, `table_desc`, `rec_en_status`, `rec_del_status`, `rec_sys_status`, `rec_sort`, `rec_memo`, `rec_create_uid`, `rec_create_uname`, `rec_create_datetime`, `rec_update_uid`, `rec_update_uname`, `rec_update_datetime`) VALUES ('6c3945e2669c4da681257de0bd2aad24', 'c6ce55f631d84141ac5376a0d97cbfc2', 'IST_LINE_POINT', '巡检线路点', NULL, '1', '0', '0', 40, NULL, '1', '轩晨', '2025-09-20 14:09:22', '1', '轩晨', '2025-09-20 14:09:56');
+INSERT INTO `xclite_api_info` (`id`, `class_id`, `table_code`, `table_name`, `table_desc`, `rec_en_status`, `rec_del_status`, `rec_sys_status`, `rec_sort`, `rec_memo`, `rec_create_uid`, `rec_create_uname`, `rec_create_datetime`, `rec_update_uid`, `rec_update_uname`, `rec_update_datetime`) VALUES ('75c641c622224641a15ca0002c2715d3', 'c6ce55f631d84141ac5376a0d97cbfc2', 'IST_POINT', '巡检点', NULL, '1', '0', '0', 15, NULL, NULL, NULL, NULL, '1', '轩晨', '2025-09-20 11:12:26');
+INSERT INTO `xclite_api_info` (`id`, `class_id`, `table_code`, `table_name`, `table_desc`, `rec_en_status`, `rec_del_status`, `rec_sys_status`, `rec_sort`, `rec_memo`, `rec_create_uid`, `rec_create_uname`, `rec_create_datetime`, `rec_update_uid`, `rec_update_uname`, `rec_update_datetime`) VALUES ('9ae03ba77ba948ac90e79a52d3651352', '18a293ddee4f4aee8da80a35fda1e98a', 'IST_TASK_ITEM_ERROR', '巡检项异常记录', NULL, '1', '0', '0', 5, NULL, '1', '轩晨', '2025-09-21 01:05:08', NULL, NULL, NULL);
+INSERT INTO `xclite_api_info` (`id`, `class_id`, `table_code`, `table_name`, `table_desc`, `rec_en_status`, `rec_del_status`, `rec_sys_status`, `rec_sort`, `rec_memo`, `rec_create_uid`, `rec_create_uname`, `rec_create_datetime`, `rec_update_uid`, `rec_update_uname`, `rec_update_datetime`) VALUES ('add4d8ae378b40e9a536e7e8bde618ef', '18a293ddee4f4aee8da80a35fda1e98a', 'IST_TASK_ITEM', '巡检任务项', NULL, '1', '0', '0', 3, NULL, '1', '轩晨', '2025-09-21 01:05:08', '1', '轩晨', '2025-09-21 01:05:35');
+INSERT INTO `xclite_api_info` (`id`, `class_id`, `table_code`, `table_name`, `table_desc`, `rec_en_status`, `rec_del_status`, `rec_sys_status`, `rec_sort`, `rec_memo`, `rec_create_uid`, `rec_create_uname`, `rec_create_datetime`, `rec_update_uid`, `rec_update_uname`, `rec_update_datetime`) VALUES ('d178a83093a34066845e22417d4942fb', '18a293ddee4f4aee8da80a35fda1e98a', 'IST_TASK_DEVICE', '巡检任务设备', NULL, '1', '0', '0', 4, NULL, '1', '轩晨', '2025-09-21 01:05:08', '1', '轩晨', '2025-09-21 01:05:45');
+INSERT INTO `xclite_api_info` (`id`, `class_id`, `table_code`, `table_name`, `table_desc`, `rec_en_status`, `rec_del_status`, `rec_sys_status`, `rec_sort`, `rec_memo`, `rec_create_uid`, `rec_create_uname`, `rec_create_datetime`, `rec_update_uid`, `rec_update_uname`, `rec_update_datetime`) VALUES ('d5ed2c33376e490a830d9f8326a3e803', 'c6ce55f631d84141ac5376a0d97cbfc2', 'IST_LINE', '巡检线路', NULL, '1', '0', '0', 35, NULL, '1', '轩晨', '2025-09-20 14:09:22', '1', '轩晨', '2025-09-20 14:09:50');
+INSERT INTO `xclite_api_info` (`id`, `class_id`, `table_code`, `table_name`, `table_desc`, `rec_en_status`, `rec_del_status`, `rec_sys_status`, `rec_sort`, `rec_memo`, `rec_create_uid`, `rec_create_uname`, `rec_create_datetime`, `rec_update_uid`, `rec_update_uname`, `rec_update_datetime`) VALUES ('e174ef63925b4e76a545a3c2fee4725e', 'c6ce55f631d84141ac5376a0d97cbfc2', 'IST_LINE_CLASS', '巡检线路分类', NULL, '1', '0', '0', 30, NULL, '1', '轩晨', '2025-09-20 14:09:22', '1', '轩晨', '2025-09-20 14:09:45');

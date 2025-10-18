@@ -1,6 +1,5 @@
 lite-api:
   resource:
-    # 配置文件存储位置 绝对路径
     location: /Users/zhixiulee/code/idea/open_source/open-xclite-api/xclite-service/xclite-service-mock/src/main/webapp/data/xclite-api
     showUrl: false #是否打印URL
     readonly: false
