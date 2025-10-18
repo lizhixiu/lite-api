@@ -1,10 +1,10 @@
-# XCLite API
+# Lite API
 
 ## 简介
 
-XCLite API 是一个基于 [JFinal](https://github.com/jfinal/jfinal) 框架的轻量级 API 敏捷开发框架。通过约定优于配置的方式，实现统一的标准，让您用尽可能简单的方式完成尽可能多的需求。告别 CRUD，拒绝重复劳动，远离搬砖。
+Lite API 是一个基于 [JFinal](https://github.com/jfinal/jfinal) 框架的轻量级 API 敏捷开发框架。通过约定优于配置的方式，实现统一的标准，让您用尽可能简单的方式完成尽可能多的需求。告别 CRUD，拒绝重复劳动，远离搬砖。
 
-XCLite API 借鉴了 [Magic-API](https://gitee.com/ssssssss-team/magic-api) 的优秀设计理念，结合 JFinal 框架的高性能特性，为开发者提供了一套简洁高效的 API 开发解决方案。
+Lite API 借鉴了 [Magic-API](https://gitee.com/ssssssss-team/magic-api) 的优秀设计理念，结合 JFinal 框架的高性能特性，为开发者提供了一套简洁高效的 API 开发解决方案。
 
 ## 特性
 
@@ -23,19 +23,19 @@ XCLite API 借鉴了 [Magic-API](https://gitee.com/ssssssss-team/magic-api) 的�
 
 ## 示例项目
 
-### xclite-service-mock 项目截图
+### Lite-service-mock 项目截图
 | <img src="docs/image/mock/scui/Snipaste_2025-10-18_23-21-40.png" alt="lite-api mock 1" width="350"> | <img src="docs/image/mock/scui/Snipaste_2025-10-18_23-21-41.png" alt="lite-api mock 2" width="350"> | <img src="docs/image/mock/scui/Snipaste_2025-10-18_23-25-25.png" alt="lite-api mock 3" width="350"> | <img src="docs/image/mock/scui/Snipaste_2025-10-18_23-25-34.png" alt="lite-api mock 4" width="350"> |
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | <img src="docs/image/mock/scui/Snipaste_2025-10-18_23-25-53.png" alt="lite-api mock 5" width="350"> | <img src="docs/image/mock/scui/Snipaste_2025-10-18_23-26-09.png" alt="lite-api mock 6" width="350"> | <img src="docs/image/mock/scui/Snipaste_2025-10-18_23-27-05.png" alt="lite-api mock 7" width="350"> | <img src="docs/image/mock/scui/Snipaste_2025-10-18_23-27-20.jpg" alt="lite-api mock 8" width="350"> |
 
 
-### xclite-service-demo 项目截图
+### Lite-service-demo 项目截图
 | <img src="docs/image/demo/db/SQL_分页.png" alt="SQL_分页" width="350" height="200"> | <img src="docs/image/demo/db/SQL_列表.png" alt="SQL_列表" width="350" height="200"> | <img src="docs/image/demo/db/SQL_查询单值.png" alt="SQL_查询单值" width="350" height="200"> | <img src="docs/image/demo/db/SQL_查询数值.png" alt="SQL_查询数值" width="350" height="200"> |
 |----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | <img src="docs/image/demo/db/Table_分页.png" alt="Table_分页" width="350" height="200"> | <img src="docs/image/demo/db/Table_列表.png" alt="lite-api db 2" width="350" height="200"> | <img src="docs/image/demo/db/Table_删除.png" alt="Table_删除" width="350" height="200"> | <img src="docs/image/demo/db/Table_数目.png" alt="Table_数目" width="350" height="200"> |
 | <img src="docs/image/demo/db/OTHER_事务.png" alt="OTHER_事务" width="350" height="200"> | <img src="docs/image/demo/db/OTHER_多数据源.png" alt="OTHER_多数据源" width="350" height="200"> | <img src="docs/image/demo/db/OTHER_缓存.png" alt="OTHER_缓存" width="350" height="200"> | <img src="docs/image/demo/db/OTHER_驼峰.png" alt="OTHER_驼峰" width="350" height="200"> |
 
-### xclite-api 结合ide ai ( Qoder TRAE 插件)开发功能截图
+### Lite-api 结合ide ai ( Qoder TRAE 插件)开发功能截图
 | <img src="docs/image/ai/demo/qoder.jpg" alt="qoder" width="350" height="200">| <img src="docs/image/ai/demo/api代码自动生成.jpg" alt="api代码自动生成" width="350" height="200">  | <img src="docs/image/ai/demo/trae自动提示.png" alt="trae自动提示" width="350" height="200"> | <img src="docs/image/ai/demo/展示效果.jpg" alt="展示效果" width="350" height="200"> |
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 
