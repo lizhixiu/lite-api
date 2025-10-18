@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<api-group id="table" name="table" path="/mock/scui/api/system/table">
+    <api id="list" name="list" method="GET" path="list">
+        <script><![CDATA[
+            return {
+                "total": 2,
+                "page": 1,
+                "pageSize": 20,
+                "rows": [{
+                    "id": "1",
+                    "name": "用户列表",
+                    "code": "userList"
+                }]
+            }
+        ]]></script>
+    </api>
+    <api id="info" name="info" method="GET" path="info">
+        <script><![CDATA[
+            return {
+                "id": "1",
+                "name": "用户列表",
+                "code": "userList",
+                "remoteSort": true,
+                "remoteFilter": true,
+                "column": [{
+                        "label": "ID",
+                        "prop": "id",
+                        "width": "80",
+                        "hide": true,
+                        "sortable": false,
+                        "fixed": false,
+                        "filters": []
+                    },
+                    {
+                        "label": "头像",
+                        "prop": "avatar",
+                        "width": "80",
+                        "hide": false,
+                        "sortable": false,
+                        "fixed": false,
+                        "filter": true,
+                        "filters": [{
+                                "text": "未上传",
+                                "value": "0"
+                            },
+                            {
+                                "text": "已上传",
+                                "value": "1"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "登录账号",
+                        "prop": "userName",
+                        "width": "150",
+                        "hide": false,
+                        "sortable": false,
+                        "fixed": false,
+                        "filters": []
+                    },
+                    {
+                        "label": "姓名",
+                        "prop": "name",
+                        "width": "150",
+                        "hide": false,
+                        "sortable": false,
+                        "fixed": false,
+                        "filters": []
+                    },
+                    {
+                        "label": "加入时间",
+                        "prop": "date",
+                        "width": "150",
+                        "hide": false,
+                        "sortable": false,
+                        "fixed": false,
+                        "filters": []
+                    }
+                ]
+            }
+        ]]></script>
+    </api>
+</api-group>

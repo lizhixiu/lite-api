@@ -1,0 +1,82 @@
+# 操作系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IntelliJ IDEA 文件
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Gradle 文件
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Maven 文件
+target/
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# 日志文件
+log/
+*.log
+
+# 临时文件
+*.tmp
+*.temp
+.cache/
+
+# 环境变量文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE 配置文件
+.vscode/
+.settings/
+.classpath
+.project
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
+# 敏感数据
+*.pem
+*.key
+*.cert
+
+# 测试覆盖率
+.nyc_output/
+coverage/
+.istanbul.yml
+
+# 编辑器备份文件
+*~
+*.swp
+*.swo
+*~
+
+# 文件锁
+*.lock
+
+*.ms
+*.group
+
+data/lite-api/apibak/

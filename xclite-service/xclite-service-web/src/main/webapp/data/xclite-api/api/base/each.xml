@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api-group id="each" name="循环操作" path="/base/each" module="base">
+    <api id="list" method="GET" name="循环list" path="/list">
+        <script><![CDATA[
+            /*
+                测试循环List
+            */
+            var list = [1,2,3,4,5];
+            var sum = 0;
+            for(val in list){
+                sum = sum + val;
+            }
+            return sum;
+        ]]></script>
+    </api>
+
+    <api id="map" method="GET" name="循环map" path="/map">
+        <script><![CDATA[
+           /*
+                测试循环Map
+            */
+            var map = {
+                key1 : 1,
+                key2 : 2,
+                key3 : 3
+            };
+            var sum = 0;
+            var keys = '';
+            for(key,value in map){
+                sum = sum + value;
+                keys = keys + key
+            }
+            return keys + '-' + sum;
+        ]]></script>
+    </api>
+
+    <api id="for" method="GET" name="for循环" path="/for">
+        <script><![CDATA[
+           /*
+                测试循环
+            */
+            var sum = 0;
+            for(val in range(0,100)){   //包括0 包括100
+                if(val > 90){
+                    break;  //跳出循环
+                }
+                if(val % 3 == 0){
+                    continue;   //进入下一次循环
+                }
+                sum = sum + val;
+            }
+            return sum;
+        ]]></script>
+    </api>
+
+
+    <api id="lambdaList" method="GET" name="lambda循环list" path="/lambda/list">
+        <script><![CDATA[
+            var list = [1,2,3,4,5,6,7,8,9,10]
+            var sum = 0;
+            list.each(it => sum+= it + 1)
+            return sum
+        ]]></script>
+    </api>
+
+
+    <api id="lambdaMap" method="GET" name="lambda循环map" path="/lambda/map">
+        <script><![CDATA[
+           var map = {
+                key1 : 1,
+                key2 : 2,
+                key3 : 3
+            };
+            var sum = 0;
+            var keys = '';
+            map.each((key,value) => {
+                keys += key;
+                sum += value;
+
+            })
+            return keys + '-' + sum;
+        ]]></script>
+    </api>
+
+
+    <api id="while" method="GET" name="while" path="/while">
+        <script><![CDATA[
+           var index = 0;
+            var sum = 0;
+            while(index < 100){
+                sum += index++;
+            }
+            return sum
+        ]]></script>
+    </api>
+
+</api-group>

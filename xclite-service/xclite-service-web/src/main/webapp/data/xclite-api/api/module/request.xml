@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<api-group id="request" name="request模块" path="/module/request">
+    <api id="test" name="测试1" method="GET" path="/test">
+        <script>
+           import request;
+            // 相关文档： https://www.ssssssss.org/lite-api/pages/module/request/
+            // 获取请求的header数组
+            return request.getHeaders("Host")
+        </script>
+    </api>
+</api-group>

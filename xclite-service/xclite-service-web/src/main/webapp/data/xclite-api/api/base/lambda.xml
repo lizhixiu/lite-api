@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api-group id="lambda" name="lambda" path="/base/lambda">
+    <api id="filter" method="GET" name="过滤" path="/filter">
+        <script><![CDATA[
+           var list = [{
+                sex : 0,
+                name : '小明'
+            },{
+                sex : 1,
+                name : '小花'
+            }]
+            // 利用map函数对list进行过滤
+            return list.filter((item)=>item.sex == 0);
+        ]]></script>
+    </api>
+
+    <api id="filter-map" method="GET" name="过滤和转换" path="/filter-map">
+        <script><![CDATA[
+           var list = [{
+                sex : 0,
+                name : '小明'
+            },{
+                sex : 1,
+                name : '小花'
+            }]
+            // 利用map函数对list进行过滤，然后进行转换
+            return list.filter(item=>item.sex == 0).map((item)=>{
+                sex : item.sex == 0 ? '男' : '女',
+                name : item.name
+            });
+        ]]></script>
+    </api>
+
+
+    <api id="map" method="GET" name="字段转换" path="/map">
+        <script><![CDATA[
+           var list = [{
+                sex : 0,
+                name : '小明',
+                age : 19
+            },{
+                sex : 1,
+                name : '小花',
+                age : 18
+            }];
+
+            var getAge = (age)=>{
+                return age > 18 ? '成人' : '未成年'
+            }
+            // 利用map函数对list进行过滤
+            return list.map((item)=>{
+                age : getAge(item.age),
+                sex : item.sex == 0 ? '男' : '女',
+                name : item.name
+            });
+        ]]></script>
+    </api>
+
+
+</api-group>

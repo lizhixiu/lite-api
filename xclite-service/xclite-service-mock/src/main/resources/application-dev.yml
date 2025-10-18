@@ -1,0 +1,12 @@
+lite-api:
+  resource:
+    # 配置文件存储位置 绝对路径
+    location: /Users/zhixiulee/code/idea/open_source/open-xclite-api/xclite-service/xclite-service-mock/src/main/webapp/data/xclite-api
+    showUrl: false #是否打印URL
+    readonly: false
+  response-code:
+    success: 200 #执行成功的code值
+    invalid: 400 #参数验证未通过的code值
+    exception: 500 #执行出现异常的code值
+
+

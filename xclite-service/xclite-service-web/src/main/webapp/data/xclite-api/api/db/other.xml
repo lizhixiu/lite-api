@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<api-group id="dbOther" name="其他" path="/db/other">
+    <api id="dynamic" name="动态切换数据源" method="GET" path="/dynamic">
+        <script>
+const dbKey = 'postgresql';
+return db[dbKey]
+.page("""
+select
+table_code,
+table_name
+from lite_api_info
+where id= #{id}
+""")
+</script>
+    </api>
+    <api id="switch" name="使用其它数据源操作" method="GET" path="/switch">
+        <script>
+         return db.slave.select("select 1")
+        </script>
+    </api>
+    <api id="pascal" name="pascal转换列名命名方式" method="GET" path="/pascal">
+        <script>
+        return db.pascal().select('select * from lite_api_info')
+        </script>
+    </api>
+    <api id="camel" name="转换列名命名方式" method="GET" path="/camel">
+        <script>
+        return db.camel().select('select * from lite_api_info')
+        </script>
+    </api>
+    <api id="cache" name="使用缓存" method="GET" path="/cache">
+        <script>
+       return db.cache('user',2000)  // 使用缓存名为user的缓存,有效期为2s
+    .select('select 1');
+        </script>
+    </api>
+    <api id="auth_transaction" name="自动事务" method="GET" path="/auto_transaction">
+        <param name="id" type="string" value="999" />
+
+        <script><![CDATA[
+            // 自动事务
+            var val = db.transaction(()=>{
+            var a =  db.update("""delete from lite_api_info where id = '999' """);
+            //  db.update("""delete from lite_api_info where id  '999' """)
+            return a;
+            });
+            return val;
+            ]]></script>
+    </api>
+</api-group>

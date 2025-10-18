@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<api-group id="api" name="api" path="/mock/scui/api">
+    <api id="token" name="登录" method="POST" path="token">
+        <script><![CDATA[
+            var data;
+            if (body.username == 'admin') {
+                data = {
+                    "token": "SCUI.Administrator.Auth",
+                    "userInfo": {
+                        "userId": "1",
+                        "userName": "Administrator",
+                        "dashboard": "0",
+                        "role": [
+                            "SA",
+                            "admin",
+                            "Auditor"
+                        ]
+                    }
+                };
+            } else {
+                data = {};
+            
+            }
+            
+            return data
+        ]]></script>
+    </api>
+    <api id="list" name="list" method="GET" path="list">
+        <script><![CDATA[
+            return {
+                "total": 5,
+                "page": 1,
+                "pageSize": 20,
+                "summary": {
+                    "num": "999.00",
+                    "progress": "888.00"
+                },
+                "rows": [{
+                        "id": "990000197211204451",
+                        "name": "Barbara Thompson",
+                        "email": "c.hbihofk@jdcqrh.edu",
+                        "ip": "195.77.182.116",
+                        "datetime": "1982-07-16 19:41:13",
+                        "boolean": false,
+                        "type": "0",
+                        "sex": "男",
+                        "progress": 68,
+                        "num": 186
+                    },
+                    {
+                        "id": "710000197612082107",
+                        "name": "Jose Walker",
+                        "email": "o.fxbjl@hornwceck.km",
+                        "ip": "16.72.206.131",
+                        "datetime": "1970-01-02 12:49:38",
+                        "boolean": true,
+                        "type": "1",
+                        "sex": "女",
+                        "progress": 56,
+                        "num": 259
+                    },
+                    {
+                        "id": "650000200707062967",
+                        "name": "Ronald Johnson",
+                        "email": "e.qknnewk@lweaouj.md",
+                        "ip": "246.20.58.84",
+                        "datetime": "2024-09-24 08:06:28",
+                        "boolean": false,
+                        "type": "1",
+                        "sex": "女",
+                        "progress": 31,
+                        "num": 732
+                    },
+                    {
+                        "id": "15000020131009369X",
+                        "name": "Patricia Rodriguez",
+                        "email": "p.gchr@ilocuqwnce.il",
+                        "ip": "195.73.185.250",
+                        "datetime": "1994-05-29 02:36:09",
+                        "boolean": false,
+                        "type": "0",
+                        "sex": "男",
+                        "progress": 78,
+                        "num": 622
+                    },
+                    {
+                        "id": "210000201811177687",
+                        "name": "Shirley White",
+                        "email": "o.xnvek@dojyi.nr",
+                        "ip": "240.237.160.134",
+                        "datetime": "1984-04-11 17:50:33",
+                        "boolean": false,
+                        "type": "1",
+                        "sex": "男",
+                        "progress": 46,
+                        "num": 194
+                    }
+                ]
+            }
+        ]]></script>
+    </api>
+    <api id="post" name="post" method="POST" path="post">
+        <script><![CDATA[
+            return 'Hello xc'
+        ]]></script>
+    </api>
+    <api id="page" name="page" method="GET" path="page">
+        <script><![CDATA[
+            return {
+                "total": 41,
+                "rows": [{
+                        "id": "310000197207248244",
+                        "name": "姜芳",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "140.172.217.19",
+                        "user": "姜芳",
+                        "time": "2017-10-27 21:33:04"
+                    },
+                    {
+                        "id": "220000197008089410",
+                        "name": "黄明",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "136.7.32.127",
+                        "user": "黄明",
+                        "time": "2022-04-09 11:29:45"
+                    },
+                    {
+                        "id": "450000198106264283",
+                        "name": "任洋",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "194.145.166.106",
+                        "user": "任洋",
+                        "time": "1970-01-07 03:17:10"
+                    },
+                    {
+                        "id": "350000199406248243",
+                        "name": "杨磊",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "224.12.152.62",
+                        "user": "杨磊",
+                        "time": "2020-12-07 02:43:30"
+                    },
+                    {
+                        "id": "420000201210161988",
+                        "name": "石军",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "200",
+                        "cip": "94.242.99.37",
+                        "user": "石军",
+                        "time": "2011-07-04 21:50:22"
+                    },
+                    {
+                        "id": "420000201902012430",
+                        "name": "袁娜",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "190.202.147.120",
+                        "user": "袁娜",
+                        "time": "1975-08-19 05:19:23"
+                    },
+                    {
+                        "id": "320000197711287623",
+                        "name": "秦丽",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "99.208.165.69",
+                        "user": "秦丽",
+                        "time": "2024-11-10 17:44:18"
+                    },
+                    {
+                        "id": "710000202406131944",
+                        "name": "孔磊",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "95.128.167.135",
+                        "user": "孔磊",
+                        "time": "1990-03-16 13:48:05"
+                    },
+                    {
+                        "id": "360000197408143851",
+                        "name": "尹超",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "55.63.219.215",
+                        "user": "尹超",
+                        "time": "1972-12-25 13:10:34"
+                    },
+                    {
+                        "id": "540000202001253220",
+                        "name": "林平",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "176.155.88.119",
+                        "user": "林平",
+                        "time": "1990-10-26 08:45:15"
+                    },
+                    {
+                        "id": "340000200608176704",
+                        "name": "毛军",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "200",
+                        "cip": "205.2.198.87",
+                        "user": "毛军",
+                        "time": "2006-07-16 09:55:35"
+                    },
+                    {
+                        "id": "430000199906271319",
+                        "name": "龚洋",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "0.67.221.241",
+                        "user": "龚洋",
+                        "time": "2017-03-02 21:22:27"
+                    },
+                    {
+                        "id": "820000198311291853",
+                        "name": "林杰",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "30.93.124.217",
+                        "user": "林杰",
+                        "time": "1972-09-14 10:51:34"
+                    },
+                    {
+                        "id": "310000197501286487",
+                        "name": "龚勇",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "31.59.213.214",
+                        "user": "龚勇",
+                        "time": "2023-06-14 23:09:53"
+                    },
+                    {
+                        "id": "430000198010147177",
+                        "name": "曾军",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "200",
+                        "cip": "106.103.39.189",
+                        "user": "曾军",
+                        "time": "1976-01-25 12:12:52"
+                    },
+                    {
+                        "id": "210000202505202092",
+                        "name": "乔秀兰",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "21.100.121.228",
+                        "user": "乔秀兰",
+                        "time": "1994-08-08 11:28:35"
+                    },
+                    {
+                        "id": "140000201403181128",
+                        "name": "常桂英",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "200",
+                        "cip": "124.202.28.139",
+                        "user": "常桂英",
+                        "time": "1993-08-19 23:59:12"
+                    },
+                    {
+                        "id": "520000200404106572",
+                        "name": "曹芳",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "200",
+                        "cip": "137.72.253.63",
+                        "user": "曹芳",
+                        "time": "2023-10-15 17:39:37"
+                    },
+                    {
+                        "id": "990000198209061679",
+                        "name": "苏涛",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "121.32.172.118",
+                        "user": "苏涛",
+                        "time": "1997-05-14 05:17:58"
+                    },
+                    {
+                        "id": "210000198511217910",
+                        "name": "廖静",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "12.104.153.115",
+                        "user": "廖静",
+                        "time": "1974-06-23 01:42:54"
+                    },
+                    {
+                        "id": "710000200201120273",
+                        "name": "崔秀英",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "165.99.93.202",
+                        "user": "崔秀英",
+                        "time": "1991-06-05 22:35:05"
+                    },
+                    {
+                        "id": "120000201310127487",
+                        "name": "郑丽",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "200",
+                        "cip": "182.3.135.196",
+                        "user": "郑丽",
+                        "time": "2004-04-03 12:04:47"
+                    },
+                    {
+                        "id": "540000198910272737",
+                        "name": "赖勇",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "111.56.26.211",
+                        "user": "赖勇",
+                        "time": "1970-04-21 09:16:00"
+                    },
+                    {
+                        "id": "500000199507207887",
+                        "name": "邱敏",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "48.210.243.74",
+                        "user": "邱敏",
+                        "time": "1999-02-01 16:00:26"
+                    },
+                    {
+                        "id": "540000198502056891",
+                        "name": "黄平",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "116.129.75.246",
+                        "user": "黄平",
+                        "time": "2009-07-17 13:14:05"
+                    },
+                    {
+                        "id": "510000202011238192",
+                        "name": "江磊",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "9.7.12.222",
+                        "user": "江磊",
+                        "time": "2001-07-19 18:01:41"
+                    },
+                    {
+                        "id": "320000198401294339",
+                        "name": "金明",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "52.119.184.123",
+                        "user": "金明",
+                        "time": "2019-02-15 02:59:12"
+                    },
+                    {
+                        "id": "14000020230717335X",
+                        "name": "姚刚",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "10.119.212.146",
+                        "user": "姚刚",
+                        "time": "1974-10-22 06:39:04"
+                    },
+                    {
+                        "id": "310000199011209656",
+                        "name": "潘敏",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "88.225.186.161",
+                        "user": "潘敏",
+                        "time": "2002-04-25 04:49:07"
+                    },
+                    {
+                        "id": "120000199303067324",
+                        "name": "曾敏",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "200",
+                        "cip": "89.214.89.28",
+                        "user": "曾敏",
+                        "time": "2009-05-28 20:39:47"
+                    },
+                    {
+                        "id": "430000197306213765",
+                        "name": "易敏",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "126.53.95.210",
+                        "user": "易敏",
+                        "time": "2013-06-26 22:28:50"
+                    },
+                    {
+                        "id": "620000197611028422",
+                        "name": "郝强",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "248.156.127.227",
+                        "user": "郝强",
+                        "time": "2015-10-27 04:07:03"
+                    },
+                    {
+                        "id": "820000198407062924",
+                        "name": "金勇",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "31.149.237.142",
+                        "user": "金勇",
+                        "time": "1973-08-29 20:55:58"
+                    },
+                    {
+                        "id": "360000199606021504",
+                        "name": "邵勇",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "19.116.89.169",
+                        "user": "邵勇",
+                        "time": "1988-11-03 03:04:33"
+                    },
+                    {
+                        "id": "460000198308112802",
+                        "name": "何平",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "200",
+                        "cip": "3.160.90.124",
+                        "user": "何平",
+                        "time": "1990-12-14 13:37:28"
+                    },
+                    {
+                        "id": "130000197911173182",
+                        "name": "邵娟",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "252.151.158.137",
+                        "user": "邵娟",
+                        "time": "2017-08-03 12:12:44"
+                    },
+                    {
+                        "id": "310000201808021853",
+                        "name": "何敏",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "80.153.92.212",
+                        "user": "何敏",
+                        "time": "2021-10-09 23:58:31"
+                    },
+                    {
+                        "id": "530000202106112529",
+                        "name": "谢涛",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "163.60.74.122",
+                        "user": "谢涛",
+                        "time": "2014-10-08 22:41:23"
+                    },
+                    {
+                        "id": "46000019871223465X",
+                        "name": "韩强",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "91.185.188.17",
+                        "user": "韩强",
+                        "time": "2005-07-23 16:30:00"
+                    },
+                    {
+                        "id": "810000202407061865",
+                        "name": "曹超",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "199.150.38.189",
+                        "user": "曹超",
+                        "time": "1981-03-16 08:20:18"
+                    },
+                    {
+                        "id": "140000199708037135",
+                        "name": "刘超",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "39.22.52.238",
+                        "user": "刘超",
+                        "time": "1993-10-30 01:33:32"
+                    }
+                ]
+            }
+        ]]></script>
+    </api>
+    <api id="ver" name="ver" method="GET" path="ver">
+        <script><![CDATA[
+            return '1.6.9'
+        ]]></script>
+    </api>
+    <api id="list" name="list" method="GET" path="list">
+        <script><![CDATA[
+            return {
+                "total": 85060,
+                "page": 1,
+                "pageSize": 20,
+                "rows": [{
+                        "id": "4f7FfeC5-7214-95D2-ffe3-Ae9FbeAf6D14",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Michael Jackson&_=.png",
+                        "fileName": "b3C6fEeb-f6c7-bF09-BD83-CC3A1634A22b.png"
+                    },
+                    {
+                        "id": "cCdaFc72-96Ad-fF2e-cEDe-BA7FA23A616c",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Nancy Harris&_=.png",
+                        "fileName": "C422b84e-Cd39-ac8C-C599-3ca83dADe410.png"
+                    },
+                    {
+                        "id": "997bd145-8bC3-E72C-EF16-1eE142396d72",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Laura Thomas&_=.png",
+                        "fileName": "3f1F7AAf-4A1A-6a7D-f299-339F7Dc341a2.png"
+                    },
+                    {
+                        "id": "BC4C5582-C91c-f7ca-F457-B7daAC63EdfA",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Margaret Lee&_=.png",
+                        "fileName": "ED4d6EFb-eB62-5BFe-eB4a-a8AdC7fe1E1B.png"
+                    },
+                    {
+                        "id": "5cBf5fF8-fD9a-bBe8-eD3A-a5f1F0B4CBBd",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Mary Robinson&_=.png",
+                        "fileName": "C37F6CFE-CB34-eE29-58bF-73bE2596b4b0.png"
+                    },
+                    {
+                        "id": "0fA7D6Be-a223-dc37-49Ff-dEecc9Eee1B8",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Steven Perez&_=.png",
+                        "fileName": "dE6966c2-07AA-44Fe-26d2-B23D788761bA.png"
+                    },
+                    {
+                        "id": "EbcEEA99-85Db-3305-6A3e-acb3e21c2dD5",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Lisa Taylor&_=.png",
+                        "fileName": "F605d3F4-C7b2-Dc4f-CbDC-6b783Ad81b5b.png"
+                    },
+                    {
+                        "id": "29363b9c-beFa-5eAD-DEEE-fC55AAdF2cE1",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Edward Martinez&_=.png",
+                        "fileName": "8DF2CECe-dFbA-2ea4-6b4D-F8b2fCdaC20B.png"
+                    },
+                    {
+                        "id": "DCC6dBAD-45C8-df6c-4aCC-A7848Fb42b29",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Kenneth Miller&_=.png",
+                        "fileName": "eF32Ce68-b6Cb-e5CE-b2Bc-ee58cdbBA613.png"
+                    },
+                    {
+                        "id": "23C7CB69-cde5-bEf2-F4eD-561C01422A1A",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Kenneth Perez&_=.png",
+                        "fileName": "0c18A55C-beF9-834f-1CA6-7c06CADe6e7f.png"
+                    },
+                    {
+                        "id": "d1dFD2Bc-9D07-DbBd-746f-AA7b1cC7F418",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Donald Anderson&_=.png",
+                        "fileName": "7Bf88E18-B7Df-be3b-C23F-F79bbe1Cdd80.png"
+                    },
+                    {
+                        "id": "bEbb42AB-F2d2-b7BB-EBDC-e098B4cd83fE",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Scott Taylor&_=.png",
+                        "fileName": "dE591E6e-8BfD-59C8-cbbe-bB89Dd06c3e3.png"
+                    },
+                    {
+                        "id": "CEDa1fB7-1CA8-4efF-05F5-336243BB6a4e",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Joseph Miller&_=.png",
+                        "fileName": "6cfeFE2e-D629-1efB-2bef-bff13f95Bc78.png"
+                    },
+                    {
+                        "id": "75211E9C-D2E9-44F7-9e6e-D9e713d8ed7C",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Patricia Anderson&_=.png",
+                        "fileName": "d1Cddd25-35fb-0E7d-1Fef-fF7CcfBec177.png"
+                    },
+                    {
+                        "id": "2de1d91c-BFC1-AFbe-02d7-C5b04fd193ce",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=John Williams&_=.png",
+                        "fileName": "Ac5b7C8D-FcDC-1613-9eA7-14502cb7355A.png"
+                    },
+                    {
+                        "id": "7e40993b-Ab8F-Cb16-1583-FFBc5eb3FAB5",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Charles Garcia&_=.png",
+                        "fileName": "E5088dAf-bDE3-DFC7-9c9A-f6DaeE91D770.png"
+                    },
+                    {
+                        "id": "2267f7DA-5d8A-BCdc-A70D-B6Cd93eB5AAB",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Deborah Harris&_=.png",
+                        "fileName": "9e7aE91d-E99A-77E4-f5d6-3eACebCEDB6A.png"
+                    },
+                    {
+                        "id": "33Ec3E64-4747-5aaF-d45D-b5bf5BaEc0Ae",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Joseph Martinez&_=.png",
+                        "fileName": "f9Fa8b43-1f6B-cEEA-E9f4-8EA87ACE2CeE.png"
+                    },
+                    {
+                        "id": "d9373b07-462b-31Fc-b6ef-eff9eB6fFD8e",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Jose Thomas&_=.png",
+                        "fileName": "A23dA87D-cF6F-f9ff-9c3b-D9f39F21aCA2.png"
+                    },
+                    {
+                        "id": "5E2C7a6f-4Eb9-fbb9-97ac-d74eeC01018f",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Jennifer Johnson&_=.png",
+                        "fileName": "DF20AB8E-e73b-dFD9-9e4E-C622B2DCD59d.png"
+                    },
+                    {
+                        "id": "49418bD0-dC91-3F1e-7dCf-ffFdcf81c3Fd",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Jessica Smith&_=.png",
+                        "fileName": "EF6Dc39a-0bbc-A463-DB28-59EBCbef82D1.png"
+                    },
+                    {
+                        "id": "E22dadf3-d93e-94Df-284c-8C9636dD1623",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Mark Walker&_=.png",
+                        "fileName": "D9b21e4e-d13b-2023-CC2E-B8DC982f2daf.png"
+                    },
+                    {
+                        "id": "6B47a584-6822-b6f2-5524-A4C69dD6F3aE",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Donald Moore&_=.png",
+                        "fileName": "D8351ef9-19a4-BE47-2De9-eB4D6EbD0e28.png"
+                    },
+                    {
+                        "id": "2cA9DeB4-EEc8-f4EC-F4ff-47B3dd98E05F",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Jennifer Williams&_=.png",
+                        "fileName": "cB1967D7-D8Fd-732f-5544-BE22da05266b.png"
+                    },
+                    {
+                        "id": "1596cb8F-558a-161c-C15E-eCbbD73943e9",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Cynthia Jones&_=.png",
+                        "fileName": "BcDdEA76-5b33-84f9-28f8-A5a8745B2Aa4.png"
+                    },
+                    {
+                        "id": "5ef4Cc52-F1Be-e22c-Be2B-0DeEDf9DC7f1",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Patricia Gonzalez&_=.png",
+                        "fileName": "b4d97B7a-e468-cAF2-A073-9eC17e4D4CBe.png"
+                    },
+                    {
+                        "id": "Dc6fC913-8aBf-036A-85CE-760C461cFc2A",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Melissa Jones&_=.png",
+                        "fileName": "2DBaB69C-c07F-177c-2213-C587fAbF1E1A.png"
+                    },
+                    {
+                        "id": "beFDdeA1-A9F8-25ff-eEFc-dB9bb10d1332",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Jessica Davis&_=.png",
+                        "fileName": "dBdCd5D2-c24c-B3b4-ceFe-Cb8bD3333152.png"
+                    },
+                    {
+                        "id": "8a39Ba89-62EB-5bA1-c22f-bfd6d4Ef3bC6",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Helen Allen&_=.png",
+                        "fileName": "447f31F5-E0e5-2b51-Cbb1-5b28ACFc886B.png"
+                    },
+                    {
+                        "id": "aCcb5dEF-ebA4-fFa4-f562-1EAf7BfAd7B2",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Nancy Thomas&_=.png",
+                        "fileName": "CD2a20Af-cE9f-A2ee-5dB3-36fc9aFE54df.png"
+                    },
+                    {
+                        "id": "1e7Dd3fA-69f6-E1E8-de39-6Dc3adBdadaC",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Melissa Gonzalez&_=.png",
+                        "fileName": "dDDADcbf-D21e-cCa7-4b53-eFFaAf1d4F4E.png"
+                    },
+                    {
+                        "id": "4E76DBDf-c9bD-512B-c5Fd-d65B4b82D988",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=James Williams&_=.png",
+                        "fileName": "3294eBde-61C9-BE8b-1375-7BADf33Fb1eF.png"
+                    },
+                    {
+                        "id": "de8cdB5a-d687-f7dc-5aBD-d9ceD16ee6E9",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Frank Lopez&_=.png",
+                        "fileName": "bCf27834-8cBe-76dc-aCFc-Fe26d62d23bD.png"
+                    },
+                    {
+                        "id": "BecB9594-A7a7-e1CB-e7B2-66A59F9Fd1BD",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=George Thomas&_=.png",
+                        "fileName": "5cC8A2bB-1D0D-f8bF-33B6-02c701F84dBB.png"
+                    },
+                    {
+                        "id": "EFeD33Df-1564-C6D8-B9cE-6Af38fAEe6D4",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Patricia Thompson&_=.png",
+                        "fileName": "D2AaE81d-9fBc-FDd9-EBF8-D1049dFD8DDd.png"
+                    },
+                    {
+                        "id": "26CBd11f-129b-d7C2-66f6-8eD3Ffb92F27",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Ronald Walker&_=.png",
+                        "fileName": "B2C6aa32-BdF1-cEF4-7B1D-8B8A44A58Cdb.png"
+                    },
+                    {
+                        "id": "35Dba3Da-f7dE-D5CA-14a6-5DcEC9F88Cc2",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Nancy Miller&_=.png",
+                        "fileName": "CeD4Fd0d-fECB-fee4-3fC0-f7C33aAc0e3E.png"
+                    },
+                    {
+                        "id": "E57be718-e3c8-553E-09FB-CBeDdD8ff72d",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Linda Moore&_=.png",
+                        "fileName": "caBaEEAf-b0fd-2Ad8-ddC2-6f00F8C2efBA.png"
+                    },
+                    {
+                        "id": "F97a53d4-6BeD-fD2D-7Fea-ECFD3D0DFfB8",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Melissa Harris&_=.png",
+                        "fileName": "6Da58ebA-bab9-F12C-b6b0-02cBa15Cecac.png"
+                    },
+                    {
+                        "id": "1f8B8e72-fd5B-498A-a25D-B016AC7Df433",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Michelle Thomas&_=.png",
+                        "fileName": "1A2F45C0-4C7F-9ceA-a732-c3bF3dD9024C.png"
+                    }
+                ]
+            }
+        ]]></script>
+    </api>
+    <api id="menu" name="menu" method="GET" path="menu">
+        <script><![CDATA[
+            return [{
+                    "id": "",
+                    "label": "未分组"
+                },
+                {
+                    "id": "100",
+                    "label": "素材"
+                },
+                {
+                    "id": "200",
+                    "label": "证件"
+                }
+            ]
+        ]]></script>
+    </api>
+</api-group>

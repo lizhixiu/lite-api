@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<api-group id="demo" name="demo" path="/mock/scui/api/demo">
+    <api id="list" name="list" method="GET" path="list">
+        <script><![CDATA[
+            return {
+                "total": 5,
+                "page": 1,
+                "pageSize": 20,
+                "summary": {
+                    "num": "999.00",
+                    "progress": "888.00"
+                },
+                "rows": [{
+                        "id": "990000197211204451",
+                        "name": "Barbara Thompson",
+                        "email": "c.hbihofk@jdcqrh.edu",
+                        "ip": "195.77.182.116",
+                        "datetime": "1982-07-16 19:41:13",
+                        "boolean": false,
+                        "type": "0",
+                        "sex": "男",
+                        "progress": 68,
+                        "num": 186
+                    },
+                    {
+                        "id": "710000197612082107",
+                        "name": "Jose Walker",
+                        "email": "o.fxbjl@hornwceck.km",
+                        "ip": "16.72.206.131",
+                        "datetime": "1970-01-02 12:49:38",
+                        "boolean": true,
+                        "type": "1",
+                        "sex": "女",
+                        "progress": 56,
+                        "num": 259
+                    },
+                    {
+                        "id": "650000200707062967",
+                        "name": "Ronald Johnson",
+                        "email": "e.qknnewk@lweaouj.md",
+                        "ip": "246.20.58.84",
+                        "datetime": "2024-09-24 08:06:28",
+                        "boolean": false,
+                        "type": "1",
+                        "sex": "女",
+                        "progress": 31,
+                        "num": 732
+                    },
+                    {
+                        "id": "15000020131009369X",
+                        "name": "Patricia Rodriguez",
+                        "email": "p.gchr@ilocuqwnce.il",
+                        "ip": "195.73.185.250",
+                        "datetime": "1994-05-29 02:36:09",
+                        "boolean": false,
+                        "type": "0",
+                        "sex": "男",
+                        "progress": 78,
+                        "num": 622
+                    },
+                    {
+                        "id": "210000201811177687",
+                        "name": "Shirley White",
+                        "email": "o.xnvek@dojyi.nr",
+                        "ip": "240.237.160.134",
+                        "datetime": "1984-04-11 17:50:33",
+                        "boolean": false,
+                        "type": "1",
+                        "sex": "男",
+                        "progress": 46,
+                        "num": 194
+                    }
+                ]
+            }
+        ]]></script>
+    </api>
+    <api id="post" name="post" method="POST" path="post">
+        <script><![CDATA[
+            return 'Hello xc'
+        ]]></script>
+    </api>
+    <api id="page" name="page" method="GET" path="page">
+        <script><![CDATA[
+            return {
+                "total": 41,
+                "rows": [{
+                        "id": "310000197207248244",
+                        "name": "姜芳",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "140.172.217.19",
+                        "user": "姜芳",
+                        "time": "2017-10-27 21:33:04"
+                    },
+                    {
+                        "id": "220000197008089410",
+                        "name": "黄明",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "136.7.32.127",
+                        "user": "黄明",
+                        "time": "2022-04-09 11:29:45"
+                    },
+                    {
+                        "id": "450000198106264283",
+                        "name": "任洋",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "194.145.166.106",
+                        "user": "任洋",
+                        "time": "1970-01-07 03:17:10"
+                    },
+                    {
+                        "id": "350000199406248243",
+                        "name": "杨磊",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "224.12.152.62",
+                        "user": "杨磊",
+                        "time": "2020-12-07 02:43:30"
+                    },
+                    {
+                        "id": "420000201210161988",
+                        "name": "石军",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "200",
+                        "cip": "94.242.99.37",
+                        "user": "石军",
+                        "time": "2011-07-04 21:50:22"
+                    },
+                    {
+                        "id": "420000201902012430",
+                        "name": "袁娜",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "190.202.147.120",
+                        "user": "袁娜",
+                        "time": "1975-08-19 05:19:23"
+                    },
+                    {
+                        "id": "320000197711287623",
+                        "name": "秦丽",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "99.208.165.69",
+                        "user": "秦丽",
+                        "time": "2024-11-10 17:44:18"
+                    },
+                    {
+                        "id": "710000202406131944",
+                        "name": "孔磊",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "95.128.167.135",
+                        "user": "孔磊",
+                        "time": "1990-03-16 13:48:05"
+                    },
+                    {
+                        "id": "360000197408143851",
+                        "name": "尹超",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "55.63.219.215",
+                        "user": "尹超",
+                        "time": "1972-12-25 13:10:34"
+                    },
+                    {
+                        "id": "540000202001253220",
+                        "name": "林平",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "176.155.88.119",
+                        "user": "林平",
+                        "time": "1990-10-26 08:45:15"
+                    },
+                    {
+                        "id": "340000200608176704",
+                        "name": "毛军",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "200",
+                        "cip": "205.2.198.87",
+                        "user": "毛军",
+                        "time": "2006-07-16 09:55:35"
+                    },
+                    {
+                        "id": "430000199906271319",
+                        "name": "龚洋",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "0.67.221.241",
+                        "user": "龚洋",
+                        "time": "2017-03-02 21:22:27"
+                    },
+                    {
+                        "id": "820000198311291853",
+                        "name": "林杰",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "30.93.124.217",
+                        "user": "林杰",
+                        "time": "1972-09-14 10:51:34"
+                    },
+                    {
+                        "id": "310000197501286487",
+                        "name": "龚勇",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "31.59.213.214",
+                        "user": "龚勇",
+                        "time": "2023-06-14 23:09:53"
+                    },
+                    {
+                        "id": "430000198010147177",
+                        "name": "曾军",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "200",
+                        "cip": "106.103.39.189",
+                        "user": "曾军",
+                        "time": "1976-01-25 12:12:52"
+                    },
+                    {
+                        "id": "210000202505202092",
+                        "name": "乔秀兰",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "21.100.121.228",
+                        "user": "乔秀兰",
+                        "time": "1994-08-08 11:28:35"
+                    },
+                    {
+                        "id": "140000201403181128",
+                        "name": "常桂英",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "200",
+                        "cip": "124.202.28.139",
+                        "user": "常桂英",
+                        "time": "1993-08-19 23:59:12"
+                    },
+                    {
+                        "id": "520000200404106572",
+                        "name": "曹芳",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "200",
+                        "cip": "137.72.253.63",
+                        "user": "曹芳",
+                        "time": "2023-10-15 17:39:37"
+                    },
+                    {
+                        "id": "990000198209061679",
+                        "name": "苏涛",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "121.32.172.118",
+                        "user": "苏涛",
+                        "time": "1997-05-14 05:17:58"
+                    },
+                    {
+                        "id": "210000198511217910",
+                        "name": "廖静",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "12.104.153.115",
+                        "user": "廖静",
+                        "time": "1974-06-23 01:42:54"
+                    },
+                    {
+                        "id": "710000200201120273",
+                        "name": "崔秀英",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "165.99.93.202",
+                        "user": "崔秀英",
+                        "time": "1991-06-05 22:35:05"
+                    },
+                    {
+                        "id": "120000201310127487",
+                        "name": "郑丽",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "200",
+                        "cip": "182.3.135.196",
+                        "user": "郑丽",
+                        "time": "2004-04-03 12:04:47"
+                    },
+                    {
+                        "id": "540000198910272737",
+                        "name": "赖勇",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "111.56.26.211",
+                        "user": "赖勇",
+                        "time": "1970-04-21 09:16:00"
+                    },
+                    {
+                        "id": "500000199507207887",
+                        "name": "邱敏",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "48.210.243.74",
+                        "user": "邱敏",
+                        "time": "1999-02-01 16:00:26"
+                    },
+                    {
+                        "id": "540000198502056891",
+                        "name": "黄平",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "116.129.75.246",
+                        "user": "黄平",
+                        "time": "2009-07-17 13:14:05"
+                    },
+                    {
+                        "id": "510000202011238192",
+                        "name": "江磊",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "9.7.12.222",
+                        "user": "江磊",
+                        "time": "2001-07-19 18:01:41"
+                    },
+                    {
+                        "id": "320000198401294339",
+                        "name": "金明",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "52.119.184.123",
+                        "user": "金明",
+                        "time": "2019-02-15 02:59:12"
+                    },
+                    {
+                        "id": "14000020230717335X",
+                        "name": "姚刚",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "10.119.212.146",
+                        "user": "姚刚",
+                        "time": "1974-10-22 06:39:04"
+                    },
+                    {
+                        "id": "310000199011209656",
+                        "name": "潘敏",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "88.225.186.161",
+                        "user": "潘敏",
+                        "time": "2002-04-25 04:49:07"
+                    },
+                    {
+                        "id": "120000199303067324",
+                        "name": "曾敏",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "200",
+                        "cip": "89.214.89.28",
+                        "user": "曾敏",
+                        "time": "2009-05-28 20:39:47"
+                    },
+                    {
+                        "id": "430000197306213765",
+                        "name": "易敏",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "126.53.95.210",
+                        "user": "易敏",
+                        "time": "2013-06-26 22:28:50"
+                    },
+                    {
+                        "id": "620000197611028422",
+                        "name": "郝强",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "248.156.127.227",
+                        "user": "郝强",
+                        "time": "2015-10-27 04:07:03"
+                    },
+                    {
+                        "id": "820000198407062924",
+                        "name": "金勇",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "31.149.237.142",
+                        "user": "金勇",
+                        "time": "1973-08-29 20:55:58"
+                    },
+                    {
+                        "id": "360000199606021504",
+                        "name": "邵勇",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "19.116.89.169",
+                        "user": "邵勇",
+                        "time": "1988-11-03 03:04:33"
+                    },
+                    {
+                        "id": "460000198308112802",
+                        "name": "何平",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "200",
+                        "cip": "3.160.90.124",
+                        "user": "何平",
+                        "time": "1990-12-14 13:37:28"
+                    },
+                    {
+                        "id": "130000197911173182",
+                        "name": "邵娟",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "252.151.158.137",
+                        "user": "邵娟",
+                        "time": "2017-08-03 12:12:44"
+                    },
+                    {
+                        "id": "310000201808021853",
+                        "name": "何敏",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "80.153.92.212",
+                        "user": "何敏",
+                        "time": "2021-10-09 23:58:31"
+                    },
+                    {
+                        "id": "530000202106112529",
+                        "name": "谢涛",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "163.60.74.122",
+                        "user": "谢涛",
+                        "time": "2014-10-08 22:41:23"
+                    },
+                    {
+                        "id": "46000019871223465X",
+                        "name": "韩强",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "91.185.188.17",
+                        "user": "韩强",
+                        "time": "2005-07-23 16:30:00"
+                    },
+                    {
+                        "id": "810000202407061865",
+                        "name": "曹超",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "199.150.38.189",
+                        "user": "曹超",
+                        "time": "1981-03-16 08:20:18"
+                    },
+                    {
+                        "id": "140000199708037135",
+                        "name": "刘超",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "401",
+                        "cip": "39.22.52.238",
+                        "user": "刘超",
+                        "time": "1993-10-30 01:33:32"
+                    }
+                ]
+            }
+        ]]></script>
+    </api>
+    <api id="ver" name="ver" method="GET" path="ver">
+        <script><![CDATA[
+            return '1.6.9'
+        ]]></script>
+    </api>
+</api-group>

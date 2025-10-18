@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<api-group id="app" name="app" path="/mock/scui/api/system/app">
+    <api id="list" name="list" method="GET" path="list">
+        <script><![CDATA[
+            return {
+                "total": 2,
+                "page": 1,
+                "pageSize": 20,
+                "rows": [{
+                        "id": "100",
+                        "appName": "自助机",
+                        "appId": "selfHelp",
+                        "secret": "YuOju6lP3t4thLbZOhRSV4UZ79vdnwIC",
+                        "type": [
+                            "ALL"
+                        ],
+                        "exp": "2035-01-01 00:00:00"
+                    },
+                    {
+                        "id": "101",
+                        "appName": "微信小程序",
+                        "appId": "WechatApp",
+                        "secret": "WgBbsRtCeXiNXIYkkShxxvqOGrAYKK2e",
+                        "type": [
+                            "UPDATA",
+                            "QUERY"
+                        ],
+                        "exp": "2023-06-01 00:00:00"
+                    }
+                ]
+            }
+        ]]></script>
+    </api>
+</api-group>

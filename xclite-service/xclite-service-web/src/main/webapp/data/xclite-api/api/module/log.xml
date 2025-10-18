@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api-group id="log" name="log模块" path="/module/log">
+    <api id="test" method="GET" name="日志打印" path="/test">
+        <script><![CDATA[
+            import log;
+            var str = "hello lite api!";
+            log.info(str);
+            return str;
+        ]]></script>
+    </api>
+</api-group>

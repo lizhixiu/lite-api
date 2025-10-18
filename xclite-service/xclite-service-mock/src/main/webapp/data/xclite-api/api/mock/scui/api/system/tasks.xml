@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<api-group id="tasks" name="tasks" path="/mock/scui/api/system/tasks">
+    <api id="list" name="list" method="GET" path="list">
+        <script><![CDATA[
+            return [{
+                    "id": "100",
+                    "taskName": "年度报表生成",
+                    "type": "report",
+                    "result": "",
+                    "state": "0",
+                    "stateName": "执行中",
+                    "createDate": "2022-06-13 17:04:55"
+                },
+                {
+                    "id": "101",
+                    "taskName": "系统日志导出",
+                    "type": "export",
+                    "result": "http://www.baidu.com",
+                    "state": "1",
+                    "stateName": "完成",
+                    "createDate": "2022-06-12 09:31:08"
+                }
+            ]
+        ]]></script>
+    </api>
+</api-group>

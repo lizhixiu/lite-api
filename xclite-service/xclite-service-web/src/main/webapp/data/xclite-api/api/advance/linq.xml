@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api-group id="linq" name="LINQ相关" path="/advance/linq" module="advance">
+    <api id="null" method="GET" name="空值转换" path="/null">
+        <script><![CDATA[
+           var list = [
+                {name : null,age: 18},
+                {name : '小明'}
+            ]
+            // || ifnull 都可以做空值转换，区别是 || 会将空字符串、0、空集合、空Map视为空值
+            return
+                select
+                    t.name || '无名' name,
+                    ifnull(t.age,20) age
+                from list t
+        ]]></script>
+    </api>
+
+    <api id="map" method="GET" name="字段转换" path="/map">
+        <script><![CDATA[
+           var list = [{
+                sex : 0,
+                name : '小明',
+                age : 19
+            },{
+                sex : 1,
+                name : '小花',
+                age : 18
+            }];
+            return
+                select
+                    t.age > 18 ? '成人' : '未成年' age,
+                    t.sex == 0 ? '男' : '女' sex,
+                    t.name
+                from list t;
+        ]]></script>
+    </api>
+
+
+
+
+</api-group>

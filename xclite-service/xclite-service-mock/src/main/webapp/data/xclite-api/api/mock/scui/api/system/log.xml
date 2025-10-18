@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<api-group id="log" name="log" path="/mock/scui/api/system/log">
+    <api id="list" name="list" method="GET" path="list">
+        <script><![CDATA[
+            return {
+                "total": 85060,
+                "page": 1,
+                "pageSize": 20,
+                "rows": [{
+                        "id": "710000197204025234",
+                        "level": "warn",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "500",
+                        "cip": "68.152.34.98",
+                        "user": "史磊",
+                        "time": "2008-07-10 23:06:51"
+                    },
+                    {
+                        "id": "460000198002242268",
+                        "level": "warn",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "500",
+                        "cip": "172.233.107.62",
+                        "user": "范平",
+                        "time": "1975-08-21 17:20:21"
+                    },
+                    {
+                        "id": "630000198602164541",
+                        "level": "warn",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "200",
+                        "cip": "89.174.225.31",
+                        "user": "谭涛",
+                        "time": "1991-09-05 11:59:01"
+                    },
+                    {
+                        "id": "450000199303196755",
+                        "level": "warn",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "500",
+                        "cip": "203.71.101.48",
+                        "user": "田明",
+                        "time": "2014-01-16 08:24:57"
+                    },
+                    {
+                        "id": "320000197611243236",
+                        "level": "info",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "100.117.0.227",
+                        "user": "孔刚",
+                        "time": "1973-09-21 04:08:22"
+                    },
+                    {
+                        "id": "540000200910145447",
+                        "level": "error",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "500",
+                        "cip": "194.103.60.254",
+                        "user": "孟敏",
+                        "time": "2000-04-18 15:32:26"
+                    },
+                    {
+                        "id": "34000020090511215X",
+                        "level": "warn",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "500",
+                        "cip": "161.243.111.22",
+                        "user": "陆丽",
+                        "time": "2006-10-21 00:45:11"
+                    },
+                    {
+                        "id": "650000197109150145",
+                        "level": "warn",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "401",
+                        "cip": "222.118.59.34",
+                        "user": "龙娟",
+                        "time": "1999-09-08 22:17:30"
+                    },
+                    {
+                        "id": "510000199701042475",
+                        "level": "warn",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "200",
+                        "cip": "194.11.114.153",
+                        "user": "廖伟",
+                        "time": "2016-11-27 19:56:54"
+                    },
+                    {
+                        "id": "820000200403117879",
+                        "level": "warn",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "200",
+                        "cip": "51.34.29.202",
+                        "user": "叶娟",
+                        "time": "1973-06-21 06:58:34"
+                    },
+                    {
+                        "id": "650000198906252843",
+                        "level": "error",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "500",
+                        "cip": "29.162.108.23",
+                        "user": "范强",
+                        "time": "1986-10-09 12:01:51"
+                    },
+                    {
+                        "id": "460000198303114315",
+                        "level": "warn",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "500",
+                        "cip": "38.24.218.58",
+                        "user": "陈磊",
+                        "time": "1974-05-19 20:52:46"
+                    },
+                    {
+                        "id": "430000202004150766",
+                        "level": "error",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "200",
+                        "cip": "122.145.22.253",
+                        "user": "顾勇",
+                        "time": "2010-09-27 20:28:05"
+                    },
+                    {
+                        "id": "310000199303087160",
+                        "level": "warn",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "500",
+                        "cip": "143.181.25.121",
+                        "user": "陈洋",
+                        "time": "2018-01-11 23:38:05"
+                    },
+                    {
+                        "id": "820000197112253788",
+                        "level": "warn",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "500",
+                        "cip": "81.136.194.155",
+                        "user": "郭涛",
+                        "time": "1980-09-25 02:26:45"
+                    },
+                    {
+                        "id": "440000198305270385",
+                        "level": "error",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "500",
+                        "cip": "69.52.149.174",
+                        "user": "马秀兰",
+                        "time": "1992-03-21 18:26:33"
+                    },
+                    {
+                        "id": "540000197812048884",
+                        "level": "error",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "500",
+                        "cip": "75.117.111.198",
+                        "user": "邓洋",
+                        "time": "1996-10-14 10:51:50"
+                    },
+                    {
+                        "id": "220000197705269345",
+                        "level": "warn",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "500",
+                        "cip": "54.28.220.99",
+                        "user": "赵芳",
+                        "time": "1985-07-13 08:26:38"
+                    },
+                    {
+                        "id": "350000201809108915",
+                        "level": "warn",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "GET",
+                        "code": "500",
+                        "cip": "229.157.36.133",
+                        "user": "崔伟",
+                        "time": "1999-02-24 10:31:17"
+                    },
+                    {
+                        "id": "990000197206173611",
+                        "level": "warn",
+                        "name": "用户登录",
+                        "url": "/oauth/token",
+                        "type": "POST",
+                        "code": "200",
+                        "cip": "178.181.64.220",
+                        "user": "贾秀兰",
+                        "time": "2009-11-23 19:43:49"
+                    }
+                ]
+            }
+        ]]></script>
+    </api>
+</api-group>

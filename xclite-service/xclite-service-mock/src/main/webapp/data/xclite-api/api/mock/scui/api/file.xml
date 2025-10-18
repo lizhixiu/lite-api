@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<api-group id="file" name="file" path="/mock/scui/api/file">
+    <api id="list" name="list" method="GET" path="list">
+        <script><![CDATA[
+            return {
+                "total": 85060,
+                "page": 1,
+                "pageSize": 20,
+                "rows": [{
+                        "id": "4f7FfeC5-7214-95D2-ffe3-Ae9FbeAf6D14",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Michael Jackson&_=.png",
+                        "fileName": "b3C6fEeb-f6c7-bF09-BD83-CC3A1634A22b.png"
+                    },
+                    {
+                        "id": "cCdaFc72-96Ad-fF2e-cEDe-BA7FA23A616c",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Nancy Harris&_=.png",
+                        "fileName": "C422b84e-Cd39-ac8C-C599-3ca83dADe410.png"
+                    },
+                    {
+                        "id": "997bd145-8bC3-E72C-EF16-1eE142396d72",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Laura Thomas&_=.png",
+                        "fileName": "3f1F7AAf-4A1A-6a7D-f299-339F7Dc341a2.png"
+                    },
+                    {
+                        "id": "BC4C5582-C91c-f7ca-F457-B7daAC63EdfA",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Margaret Lee&_=.png",
+                        "fileName": "ED4d6EFb-eB62-5BFe-eB4a-a8AdC7fe1E1B.png"
+                    },
+                    {
+                        "id": "5cBf5fF8-fD9a-bBe8-eD3A-a5f1F0B4CBBd",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Mary Robinson&_=.png",
+                        "fileName": "C37F6CFE-CB34-eE29-58bF-73bE2596b4b0.png"
+                    },
+                    {
+                        "id": "0fA7D6Be-a223-dc37-49Ff-dEecc9Eee1B8",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Steven Perez&_=.png",
+                        "fileName": "dE6966c2-07AA-44Fe-26d2-B23D788761bA.png"
+                    },
+                    {
+                        "id": "EbcEEA99-85Db-3305-6A3e-acb3e21c2dD5",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Lisa Taylor&_=.png",
+                        "fileName": "F605d3F4-C7b2-Dc4f-CbDC-6b783Ad81b5b.png"
+                    },
+                    {
+                        "id": "29363b9c-beFa-5eAD-DEEE-fC55AAdF2cE1",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Edward Martinez&_=.png",
+                        "fileName": "8DF2CECe-dFbA-2ea4-6b4D-F8b2fCdaC20B.png"
+                    },
+                    {
+                        "id": "DCC6dBAD-45C8-df6c-4aCC-A7848Fb42b29",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Kenneth Miller&_=.png",
+                        "fileName": "eF32Ce68-b6Cb-e5CE-b2Bc-ee58cdbBA613.png"
+                    },
+                    {
+                        "id": "23C7CB69-cde5-bEf2-F4eD-561C01422A1A",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Kenneth Perez&_=.png",
+                        "fileName": "0c18A55C-beF9-834f-1CA6-7c06CADe6e7f.png"
+                    },
+                    {
+                        "id": "d1dFD2Bc-9D07-DbBd-746f-AA7b1cC7F418",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Donald Anderson&_=.png",
+                        "fileName": "7Bf88E18-B7Df-be3b-C23F-F79bbe1Cdd80.png"
+                    },
+                    {
+                        "id": "bEbb42AB-F2d2-b7BB-EBDC-e098B4cd83fE",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Scott Taylor&_=.png",
+                        "fileName": "dE591E6e-8BfD-59C8-cbbe-bB89Dd06c3e3.png"
+                    },
+                    {
+                        "id": "CEDa1fB7-1CA8-4efF-05F5-336243BB6a4e",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Joseph Miller&_=.png",
+                        "fileName": "6cfeFE2e-D629-1efB-2bef-bff13f95Bc78.png"
+                    },
+                    {
+                        "id": "75211E9C-D2E9-44F7-9e6e-D9e713d8ed7C",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Patricia Anderson&_=.png",
+                        "fileName": "d1Cddd25-35fb-0E7d-1Fef-fF7CcfBec177.png"
+                    },
+                    {
+                        "id": "2de1d91c-BFC1-AFbe-02d7-C5b04fd193ce",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=John Williams&_=.png",
+                        "fileName": "Ac5b7C8D-FcDC-1613-9eA7-14502cb7355A.png"
+                    },
+                    {
+                        "id": "7e40993b-Ab8F-Cb16-1583-FFBc5eb3FAB5",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Charles Garcia&_=.png",
+                        "fileName": "E5088dAf-bDE3-DFC7-9c9A-f6DaeE91D770.png"
+                    },
+                    {
+                        "id": "2267f7DA-5d8A-BCdc-A70D-B6Cd93eB5AAB",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Deborah Harris&_=.png",
+                        "fileName": "9e7aE91d-E99A-77E4-f5d6-3eACebCEDB6A.png"
+                    },
+                    {
+                        "id": "33Ec3E64-4747-5aaF-d45D-b5bf5BaEc0Ae",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Joseph Martinez&_=.png",
+                        "fileName": "f9Fa8b43-1f6B-cEEA-E9f4-8EA87ACE2CeE.png"
+                    },
+                    {
+                        "id": "d9373b07-462b-31Fc-b6ef-eff9eB6fFD8e",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Jose Thomas&_=.png",
+                        "fileName": "A23dA87D-cF6F-f9ff-9c3b-D9f39F21aCA2.png"
+                    },
+                    {
+                        "id": "5E2C7a6f-4Eb9-fbb9-97ac-d74eeC01018f",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Jennifer Johnson&_=.png",
+                        "fileName": "DF20AB8E-e73b-dFD9-9e4E-C622B2DCD59d.png"
+                    },
+                    {
+                        "id": "49418bD0-dC91-3F1e-7dCf-ffFdcf81c3Fd",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Jessica Smith&_=.png",
+                        "fileName": "EF6Dc39a-0bbc-A463-DB28-59EBCbef82D1.png"
+                    },
+                    {
+                        "id": "E22dadf3-d93e-94Df-284c-8C9636dD1623",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Mark Walker&_=.png",
+                        "fileName": "D9b21e4e-d13b-2023-CC2E-B8DC982f2daf.png"
+                    },
+                    {
+                        "id": "6B47a584-6822-b6f2-5524-A4C69dD6F3aE",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Donald Moore&_=.png",
+                        "fileName": "D8351ef9-19a4-BE47-2De9-eB4D6EbD0e28.png"
+                    },
+                    {
+                        "id": "2cA9DeB4-EEc8-f4EC-F4ff-47B3dd98E05F",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Jennifer Williams&_=.png",
+                        "fileName": "cB1967D7-D8Fd-732f-5544-BE22da05266b.png"
+                    },
+                    {
+                        "id": "1596cb8F-558a-161c-C15E-eCbbD73943e9",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Cynthia Jones&_=.png",
+                        "fileName": "BcDdEA76-5b33-84f9-28f8-A5a8745B2Aa4.png"
+                    },
+                    {
+                        "id": "5ef4Cc52-F1Be-e22c-Be2B-0DeEDf9DC7f1",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Patricia Gonzalez&_=.png",
+                        "fileName": "b4d97B7a-e468-cAF2-A073-9eC17e4D4CBe.png"
+                    },
+                    {
+                        "id": "Dc6fC913-8aBf-036A-85CE-760C461cFc2A",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Melissa Jones&_=.png",
+                        "fileName": "2DBaB69C-c07F-177c-2213-C587fAbF1E1A.png"
+                    },
+                    {
+                        "id": "beFDdeA1-A9F8-25ff-eEFc-dB9bb10d1332",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Jessica Davis&_=.png",
+                        "fileName": "dBdCd5D2-c24c-B3b4-ceFe-Cb8bD3333152.png"
+                    },
+                    {
+                        "id": "8a39Ba89-62EB-5bA1-c22f-bfd6d4Ef3bC6",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Helen Allen&_=.png",
+                        "fileName": "447f31F5-E0e5-2b51-Cbb1-5b28ACFc886B.png"
+                    },
+                    {
+                        "id": "aCcb5dEF-ebA4-fFa4-f562-1EAf7BfAd7B2",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Nancy Thomas&_=.png",
+                        "fileName": "CD2a20Af-cE9f-A2ee-5dB3-36fc9aFE54df.png"
+                    },
+                    {
+                        "id": "1e7Dd3fA-69f6-E1E8-de39-6Dc3adBdadaC",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Melissa Gonzalez&_=.png",
+                        "fileName": "dDDADcbf-D21e-cCa7-4b53-eFFaAf1d4F4E.png"
+                    },
+                    {
+                        "id": "4E76DBDf-c9bD-512B-c5Fd-d65B4b82D988",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=James Williams&_=.png",
+                        "fileName": "3294eBde-61C9-BE8b-1375-7BADf33Fb1eF.png"
+                    },
+                    {
+                        "id": "de8cdB5a-d687-f7dc-5aBD-d9ceD16ee6E9",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Frank Lopez&_=.png",
+                        "fileName": "bCf27834-8cBe-76dc-aCFc-Fe26d62d23bD.png"
+                    },
+                    {
+                        "id": "BecB9594-A7a7-e1CB-e7B2-66A59F9Fd1BD",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=George Thomas&_=.png",
+                        "fileName": "5cC8A2bB-1D0D-f8bF-33B6-02c701F84dBB.png"
+                    },
+                    {
+                        "id": "EFeD33Df-1564-C6D8-B9cE-6Af38fAEe6D4",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Patricia Thompson&_=.png",
+                        "fileName": "D2AaE81d-9fBc-FDd9-EBF8-D1049dFD8DDd.png"
+                    },
+                    {
+                        "id": "26CBd11f-129b-d7C2-66f6-8eD3Ffb92F27",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Ronald Walker&_=.png",
+                        "fileName": "B2C6aa32-BdF1-cEF4-7B1D-8B8A44A58Cdb.png"
+                    },
+                    {
+                        "id": "35Dba3Da-f7dE-D5CA-14a6-5DcEC9F88Cc2",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Nancy Miller&_=.png",
+                        "fileName": "CeD4Fd0d-fECB-fee4-3fC0-f7C33aAc0e3E.png"
+                    },
+                    {
+                        "id": "E57be718-e3c8-553E-09FB-CBeDdD8ff72d",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Linda Moore&_=.png",
+                        "fileName": "caBaEEAf-b0fd-2Ad8-ddC2-6f00F8C2efBA.png"
+                    },
+                    {
+                        "id": "F97a53d4-6BeD-fD2D-7Fea-ECFD3D0DFfB8",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Melissa Harris&_=.png",
+                        "fileName": "6Da58ebA-bab9-F12C-b6b0-02cBa15Cecac.png"
+                    },
+                    {
+                        "id": "1f8B8e72-fd5B-498A-a25D-B016AC7Df433",
+                        "url": "http://dummyimage.com/200x200/ddd/333&text=Michelle Thomas&_=.png",
+                        "fileName": "1A2F45C0-4C7F-9ceA-a732-c3bF3dD9024C.png"
+                    }
+                ]
+            }
+        ]]></script>
+    </api>
+    <api id="menu" name="menu" method="GET" path="menu">
+        <script><![CDATA[
+            return [{
+                    "id": "",
+                    "label": "未分组"
+                },
+                {
+                    "id": "100",
+                    "label": "素材"
+                },
+                {
+                    "id": "200",
+                    "label": "证件"
+                }
+            ]
+        ]]></script>
+    </api>
+</api-group>

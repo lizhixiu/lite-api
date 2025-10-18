@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<api-group id="dic" name="dic" path="/mock/scui/api/system/dic">
+    <api id="list" name="list" method="GET" path="list">
+        <script><![CDATA[
+            return {
+                "total": 3,
+                "page": 1,
+                "pageSize": 20,
+                "rows": [{
+                        "id": "100",
+                        "key": "1",
+                        "name": "发布通知",
+                        "dic": "1",
+                        "yx": "1"
+                    },
+                    {
+                        "id": "102",
+                        "key": "2",
+                        "name": "转发通知",
+                        "dic": "1",
+                        "yx": "1"
+                    },
+                    {
+                        "id": "105",
+                        "key": "3",
+                        "name": "事务通知",
+                        "dic": "1",
+                        "yx": "0"
+                    }
+                ]
+            }
+        ]]></script>
+    </api>
+    <api id="tree" name="tree"  method="GET" path="tree">
+        <script><![CDATA[
+            return [{
+                    "id": "1",
+                    "code": "notice",
+                    "name": "通知类型"
+                },
+                {
+                    "id": "2",
+                    "code": "sex",
+                    "name": "性别"
+                },
+                {
+                    "id": "3",
+                    "code": "menuCategory",
+                    "name": "菜单类型"
+                },
+                {
+                    "id": "4",
+                    "code": "userType",
+                    "name": "用户类型",
+                    "children": [{
+                            "id": "41",
+                            "code": "userTypePC",
+                            "name": "Desktop"
+                        },
+                        {
+                            "id": "42",
+                            "code": "userTypeAPP",
+                            "name": "Mobile"
+                        }
+                    ]
+                }
+            ]
+        ]]></script>
+    </api>
+    <api id="get" name="get" method="GET" path="get">
+        <script><![CDATA[
+            return [{
+                    "value": "1",
+                    "label": "发布通知"
+                },
+                {
+                    "value": "2",
+                    "label": "转发通知"
+                },
+                {
+                    "value": "3",
+                    "label": "事务通知"
+                }
+            ]
+        ]]></script>
+    </api>
+</api-group>

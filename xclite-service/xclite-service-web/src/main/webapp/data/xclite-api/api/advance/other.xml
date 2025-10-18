@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api-group id="other" name="其他" path="/advance/other" module="advance">
+    <api id="numberConvert" method="GET" name="数值转换" path="/number/convert">
+        <script><![CDATA[
+           return {
+            'fixed' : 123.455.toFixed(2), //仿JS ,会返回String
+            'round' : 123.452.round(2),  // 保留两位小数
+            'percent': 0.456789.asPercent(2), //转为百分比，保留2位小数
+            'ceil': 1.1.ceil(), //向上取整
+            'floor': 1.9.floor(), // 向下取整
+            '::int': '-456.789'::int   // 强制类型转换
+        }
+        ]]></script>
+    </api>
+
+    <api id="json" method="GET" name="json转换" path="/json">
+        <script><![CDATA[
+           var json = {
+                "name" : "李富贵"
+            }
+            var jsonString = '{"name": "李富贵"}'
+            return {
+                'jsonObject' : jsonString::json,
+                'jsonString' : json::stringify
+            }
+        ]]></script>
+    </api>
+
+
+</api-group>
