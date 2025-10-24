@@ -17,6 +17,18 @@ XCLite API 借鉴了 [Magic-API](https://gitee.com/ssssssss-team/magic-api) 的�
 - **分页查询**：支持分页查询以及自定义分页查询
 - **SQL 缓存**：支持 SQL 缓存，以及自定义 SQL 缓存
 
+### 文档地址
+访问 `http://lite-api.demoeg.com/` 
+
+### mock接口演示地址
+
+访问 `http://lite-api.demoeg.com:8088/debug/index.html#/` 进行测试
+
+### demo接口演示地址
+
+访问 `http://lite-api.demoeg.com:8099/debug/index.html#/` 进行测试
+
+
 ### 在线测试接口
 
 访问 `http://localhost:8088/debug/index.html` 进行测试
