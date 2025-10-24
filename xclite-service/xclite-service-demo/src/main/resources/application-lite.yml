@@ -1,5 +1,4 @@
 lite-api:
-  web: /magic/web
   show-sql: true #配置打印SQL
   sql-column-case: camel
   resource:
@@ -30,12 +29,12 @@ lite-api:
       dbType: mysql
       url: jdbc:mysql://localhost/xclite_api?useSSL=false&zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=UTF8&autoReconnect=true&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
       username: root
-      password: xclite_api
+      password:
     postgresql:
       driver-class-name: org.postgresql.Driver
       type: com.alibaba.druid.pool.DruidDataSource
       dbType: postgresql
       url: jdbc:postgresql://localhost:5432/xclite_api
       username: root
-      password: xclite_api
+      password:
 

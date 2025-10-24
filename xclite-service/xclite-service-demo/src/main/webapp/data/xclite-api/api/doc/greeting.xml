@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api-group id="greeting" name="问候 APIs" path="/doc/greeting">
+    <api id="personalized" method="GET" name="个性化问候" path="/{name}">
+
+        <script><![CDATA[
+            var name = path.name;
+
+            var greeting = title ? title + ' ' + name : name;
+
+            return {
+                message: 'Hello, ' + greeting + '!',
+                timestamp: new Date()
+            };
+        ]]></script>
+    </api>
+</api-group>

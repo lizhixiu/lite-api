@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<api-group id="hello" name="Hello APIs" path="/doc/hello">
+    <api id="world" method="GET" name="Hello World" path="/world">
+        <script><![CDATA[
+            return 'Hello, World!';
+        ]]></script>
+    </api>
+</api-group>

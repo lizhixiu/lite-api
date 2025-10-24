@@ -2,7 +2,7 @@
 
 ## 简介
 
-XCLite API 是一个基于 [JFinal](https://github.com/jfinal/jfinal) 框架的轻量级 API 敏捷开发框架。通过约定优于配置的方式，实现统一的标准，让您用尽可能简单的方式完成尽可能多的需求。告别 CRUD，拒绝重复劳动，远离搬砖。
+XCLite API 是一个基于 [JFinal](https://gitee.com/jfinal/jfinal) 框架的轻量级 API 敏捷开发框架。通过约定优于配置的方式，实现统一的标准，让您用尽可能简单的方式完成尽可能多的需求。告别 CRUD，拒绝重复劳动，远离搬砖。
 
 XCLite API 借鉴了 [Magic-API](https://gitee.com/ssssssss-team/magic-api) 的优秀设计理念，结合 JFinal 框架的高性能特性，为开发者提供了一套简洁高效的 API 开发解决方案。
 

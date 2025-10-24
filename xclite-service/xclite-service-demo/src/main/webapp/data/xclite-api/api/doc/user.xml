@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api-group id="user" name="用户管理(user)" path="/doc/api/user">
+    <api id="page" method="GET" name="分页" path="/page">
+        <script><![CDATA[
+        // 查询操作
+        var page = db.page("SELECT * FROM lite_users ");
+        // 返回查询结果
+        return page;
+    ]]></script>
+    </api>
+
+
+    <api id="1" method="GET" name="分页2" path="/1">
+        <script><![CDATA[
+       try {
+    // 某些操作
+   var aaaa= ;
+} catch (e) {
+    exit 500,"内部服务器错误";
+}
+    ]]></script>
+    </api>
+
+    <!-- API 在这里定义 -->
+    <api id="get-user" method="GET" name="获取用户" path="/{id}">
+        <script><![CDATA[
+        // 查询操作
+        var lite_users = db.select("SELECT * FROM lite_users WHERE id = #{id}");
+        // 返回查询结果
+        return lite_users;
+    ]]></script>
+    </api>
+
+    <api id="create-user" method="POST" name="创建用户" path="/create">
+        <script><![CDATA[
+        return  {
+                name: name,
+                email: email,
+                age: age
+        };
+    ]]></script>
+    </api>
+
+    <api id="test" method="POST" name="测试" path="/test">
+        <script><![CDATA[
+        // 查询操作
+        var lite_users = db.select("SELECT * FROM lite_users");
+
+        // 插入操作
+        var result1 = db.insert("INSERT INTO lite_users(id,name, email) VALUES(#{id}, #{name}, #{email})");
+
+        // 更新操作
+        var result2 = db.update("UPDATE lite_users SET name = #{name} WHERE id = #{id}");
+
+        // 删除操作
+        var result3 = db.update("DELETE FROM lite_users WHERE id = #{id}");
+        return  {
+                lite_users,
+                result1,
+                result2,
+                result3,
+        };
+    ]]></script>
+    </api>
+</api-group>
