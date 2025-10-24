@@ -18,15 +18,15 @@ XCLite API 借鉴了 [Magic-API](https://gitee.com/ssssssss-team/magic-api) 的�
 - **SQL 缓存**：支持 SQL 缓存，以及自定义 SQL 缓存
 
 ### 文档地址
-访问 `http://lite-api.demoeg.com/` 
+访问 `http://lite-api.demoeg.com/[]((http://lite-api.demoeg.coml) )` 
 
 ### mock接口演示地址
 
-访问 `http://lite-api.demoeg.com:8088/debug/index.html#/` 进行测试
+访问 `[http://lite-api.demoeg.com:8088/debug/index.html](http://lite-api.demoeg.com:8088/debug/index.html)#/` 进行测试
 
 ### demo接口演示地址
 
-访问 `http://lite-api.demoeg.com:8099/debug/index.html#/` 进行测试
+访问 `[http://lite-api.demoeg.com:8099/debug/index.html](http://lite-api.demoeg.com:8099/debug/index.html)#/` 进行测试
 
 
 ### 在线测试接口
