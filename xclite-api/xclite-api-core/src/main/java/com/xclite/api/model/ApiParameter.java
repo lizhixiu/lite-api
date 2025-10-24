@@ -17,35 +17,15 @@
 
 package com.xclite.api.model;
 
+import lombok.Getter;
 import lombok.Setter;
 
-import javax.xml.bind.annotation.XmlAttribute;
-
+@Getter
 @Setter
 public class ApiParameter {
     private String name;
     private String type;
     private boolean required;
     private String desc;
-
-    @XmlAttribute
-    public String getName() {
-        return name;
-    }
-
-    @XmlAttribute
-    public String getType() {
-        return type;
-    }
-
-    @XmlAttribute
-    public boolean isRequired() {
-        return required;
-    }
-
-    @XmlAttribute
-    public String getDesc() {
-        return desc;
-    }
 
 }

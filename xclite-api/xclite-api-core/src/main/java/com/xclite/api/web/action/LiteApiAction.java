@@ -34,6 +34,15 @@ import java.util.Map;
 @Slf4j
 public class LiteApiAction extends Controller {
 
+    public void health(){
+        JsonBean<Map<String, Object>> jsonBean = new JsonBean<>(200, "success");
+        Map<String, Object> data = new HashMap<>();
+        data.put("status", LiteApiPlugin.getInstance().isStarted());
+        data.put("apiCount", LiteApiPlugin.getInstance().getApiLoader().getApiCount());
+        jsonBean.setData(data);
+        renderJson(jsonBean);
+    }
+
     /**
      * 刷新API
      */

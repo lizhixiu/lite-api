@@ -20,13 +20,10 @@ package com.xclite.api.model;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
+@Getter
 @Setter
-@XmlRootElement(name = "api-group")
 public class ApiGroup {
 
     private String id;
@@ -37,27 +34,6 @@ public class ApiGroup {
 
     private List<ApiInfo> apis;
 
-    @XmlElement(name = "api")
-    public List<ApiInfo> getApis() {
-        return apis;
-    }
-
-    @XmlAttribute
-    public String getId() {
-        return id;
-    }
-
-    @XmlAttribute
-    public String getName() {
-        return name;
-    }
-
-    @XmlAttribute
-    public String getPath() {
-        return path;
-    }
-
-    @Getter
     @Setter
     private String xmlPath;
 

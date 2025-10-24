@@ -20,11 +20,9 @@ package com.xclite.api.model;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementWrapper;
 import java.util.List;
 
+@Getter
 @Setter
 public class ApiInfo {
 
@@ -35,52 +33,9 @@ public class ApiInfo {
     private String description;
     private List<ApiParameter> parameters;
     private String script;
-    @Getter
     private String fullPath;
-    @Getter @Setter
     private ApiGroup apiGroup;
 
     private String disabledUnknownParameter;
-
-    @XmlAttribute
-    public String getId() {
-        return id;
-    }
-
-    @XmlAttribute
-    public String getName() {
-        return name;
-    }
-
-    @XmlAttribute
-    public String getMethod() {
-        return method;
-    }
-
-    @XmlAttribute
-    public String getPath() {
-        return path;
-    }
-
-    @XmlElement
-    public String getDescription() {
-        return description;
-    }
-
-    @XmlElementWrapper(name = "parameters")
-    @XmlElement(name = "param")
-    public List<ApiParameter> getParameters() {
-        return parameters;
-    }
-
-    @XmlElement
-    public String getScript() {
-        return script;
-    }
-
-    @XmlElement
-    public String getDisabledUnknownParameter() {
-        return disabledUnknownParameter;
-    }
 
 }
