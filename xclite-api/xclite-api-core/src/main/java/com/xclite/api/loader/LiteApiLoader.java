@@ -21,15 +21,10 @@ import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.util.StrUtil;
 import com.xclite.api.model.ApiGroup;
 import com.xclite.api.model.ApiInfo;
+import com.xclite.api.utils.ApiXmlUtils;
 import lombok.extern.slf4j.Slf4j;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
 import java.io.File;
-import java.io.StringReader;
-import java.io.StringWriter;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -64,16 +59,8 @@ public class LiteApiLoader {
     // 线程池用于并发处理
     private final ExecutorService executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 
-    // JAXB上下文，创建一次重复使用
-    private final JAXBContext jaxbContext;
-
     public LiteApiLoader(String workingDir) {
         this.workingDir = workingDir;
-        try {
-            this.jaxbContext = JAXBContext.newInstance(ApiGroup.class);
-        } catch (JAXBException e) {
-            throw new RuntimeException("Failed to create JAXB context", e);
-        }
     }
 
     /**
@@ -106,8 +93,7 @@ public class LiteApiLoader {
                 String xmlContent = FileUtil.readString(file, StandardCharsets.UTF_8);
 
                 // 解析XML为ApiGroup对象
-                Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
-                ApiGroup apiGroup = (ApiGroup) unmarshaller.unmarshal(new StringReader(xmlContent));
+                ApiGroup apiGroup = ApiXmlUtils.unmarshalApiGroup(xmlContent);
                 // 记录ApiGroup与文件路径的映射关系
                 apiGroup.setXmlPath(file.getAbsolutePath());
 
@@ -364,8 +350,7 @@ public class LiteApiLoader {
             }
 
             String xmlContent = FileUtil.readString(file, StandardCharsets.UTF_8);
-            Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
-            ApiGroup apiGroup = (ApiGroup) unmarshaller.unmarshal(new StringReader(xmlContent));
+            ApiGroup apiGroup = ApiXmlUtils.unmarshalApiGroup(xmlContent);
 
             log.debug("Successfully loaded ApiGroup from XML file: {}", filePath);
             return apiGroup;
@@ -494,14 +479,8 @@ public class LiteApiLoader {
      */
     public boolean saveApiGroupToXml(ApiGroup apiGroup, String filePath) {
         try {
-            Marshaller marshaller = jaxbContext.createMarshaller();
-            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-            marshaller.setProperty(Marshaller.JAXB_ENCODING, "UTF-8");
-
-            StringWriter writer = new StringWriter();
-            marshaller.marshal(apiGroup, writer);
-
-            FileUtil.writeString(writer.toString(), new File(filePath), StandardCharsets.UTF_8);
+            String xmlContent = ApiXmlUtils.marshalApiGroup(apiGroup);
+            FileUtil.writeString(xmlContent, new File(filePath), StandardCharsets.UTF_8);
             log.info("Successfully saved ApiGroup to XML file: {}", filePath);
             return true;
         } catch (Exception e) {

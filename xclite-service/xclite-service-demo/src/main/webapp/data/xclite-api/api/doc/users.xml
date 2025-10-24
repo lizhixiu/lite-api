@@ -1,0 +1,24 @@
+<api-group id="users" name="用户管理" path="/doc/api/users">
+    <api id="list" method="GET" name="列出用户" path="/list">
+        <script><![CDATA[
+            // 查询数据库中的所有用户
+            var users = db.select("SELECT id, name, email FROM lite_users");
+            return users;
+        ]]></script>
+    </api>
+
+    <api id="get" method="GET" name="获取用户" path="/{id}">
+        <script><![CDATA[
+
+
+            // 查询特定用户
+            var user = db.selectOne("SELECT id, name, email FROM lite_users WHERE id = #{path.id}");
+
+            if (user==null) {
+                exit 500, "用户未找到";
+            }
+
+            return user;
+        ]]></script>
+    </api>
+</api-group>

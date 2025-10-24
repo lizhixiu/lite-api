@@ -57,6 +57,7 @@ import java.util.*;
 public class LiteApiPlugin implements IPlugin {
 
     private static volatile LiteApiPlugin instance;
+    @Getter
     protected volatile boolean isStarted = false;
     @Getter
     private final LiteApiProperties liteApiProperties = new LiteApiProperties();

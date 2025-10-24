@@ -33,7 +33,7 @@ public class MockApiConfig extends JFinalConfig {
     private static final Prop p = loadConfig();
 
     private static Prop loadConfig() {
-        return PropKit.append(new YamlProp("application-dev.yml"));
+        return PropKit.append(new YamlProp("application-lite.yml"));
     }
 
     @Override
