@@ -1,0 +1,47 @@
+version: '3'
+
+
+services:
+  postgres:
+    # 使用官方PostgreSQL镜像，指定版本（可根据需要修改）
+    image: postgres:15.7 # 指定镜像及其版本
+    # 容器名称
+    container_name: postgres-db
+    # 重启策略：总是重启，除非手动停止
+    #restart: always
+    # 环境变量配置
+    environment:
+      # 数据库用户名
+      POSTGRES_USER: root
+      # 数据库密码
+      POSTGRES_PASSWORD: lite-api
+      # 初始数据库名称
+     # POSTGRES_DB: mydatabase
+      # 数据库编码
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --lc-collate=C --lc-ctype=C"
+    # 端口映射：主机端口:容器端口
+    ports:
+      - "5432:5432"
+    # 数据卷配置，用于持久化数据
+    volumes:
+      # 命名卷，用于存储数据库数据
+      - ./postgres-data:/var/lib/postgresql/data
+      # 可选：如果有初始化脚本，可以挂载到这个目录
+      # - ./init-scripts:/docker-entrypoint-initdb.d
+    # 健康检查配置
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U myuser -d mydatabase"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    # 资源限制（可选）
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1G
+
+# 定义命名卷，用于持久化PostgreSQL数据
+volumes:
+  postgres-data:
+    driver: local

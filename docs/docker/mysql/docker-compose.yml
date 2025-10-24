@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  mysql:
+    image: biarms/mysql:5.7.33-beta-circleci
+    ports:
+    - 3306:3306
+    volumes:
+    - ./mysql/data:/var/lib/mysql
+    environment:
+    - MYSQL_ROOT_PASSWORD=lite-api
+    - TZ=Asia/Shanghai
+    - lower_case_table_names=1
+    command: --lower_case_table_names=1
+    restart: unless-stopped
+  
+
+
