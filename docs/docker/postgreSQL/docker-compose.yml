@@ -14,7 +14,7 @@ services:
       # 数据库用户名
       POSTGRES_USER: root
       # 数据库密码
-      POSTGRES_PASSWORD: lite-api
+      POSTGRES_PASSWORD:
       # 初始数据库名称
      # POSTGRES_DB: mydatabase
       # 数据库编码

@@ -8,7 +8,7 @@ services:
     volumes:
     - ./mysql/data:/var/lib/mysql
     environment:
-    - MYSQL_ROOT_PASSWORD=lite-api
+    - MYSQL_ROOT_PASSWORD=
     - TZ=Asia/Shanghai
     - lower_case_table_names=1
     command: --lower_case_table_names=1

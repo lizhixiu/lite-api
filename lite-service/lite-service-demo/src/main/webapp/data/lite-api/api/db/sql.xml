@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api-group id="sql" name="使用SQL" path="/db/sql">
+    <api id="list" method="GET" name="查询列表" path="/list">
+        <script><![CDATA[
+          return db.select("""select * from lite_api_info order by id """)
+        ]]></script>
+    </api>
+
+    <api id="count" method="GET" name="查询数量" path="/count">
+        <script><![CDATA[
+          return db.selectInt('select count(*) from lite_api_info')
+        ]]></script>
+    </api>
+
+    <api id="selectOne" method="GET" name="查询单条" path="/selectOne">
+        <script><![CDATA[
+          return db.selectOne('select * from lite_api_info')
+        ]]></script>
+    </api>
+
+    <api id="selectValue" method="GET" name="查询单值" path="/selectValue">
+        <script><![CDATA[
+          return db.selectValue('select table_code from lite_api_info')
+        ]]></script>
+    </api>
+
+
+    <api id="page" method="GET" name="分页查询" path="/page">
+        <script><![CDATA[
+         return db.page("""
+            select
+                *
+            from lite_api_info
+        """)
+        ]]></script>
+    </api>
+
+    <api id="insert" method="GET" name="新增" path="/insert">
+        <script><![CDATA[
+          return db.insert("""insert into lite_api_info(id, table_code) values (#{id}, #{table_code})""", 'id')
+        ]]></script>
+    </api>
+
+
+
+
+    <api id="update" method="GET" name="更新" path="/update">
+        <script><![CDATA[
+         return  db.update("""
+    update lite_api_info set table_code = #{table_code} where id = #{id}
+""")
+         ]]></script>
+    </api>
+
+    <api id="delete" method="GET" name="删除数据" path="/delete">
+        <script><![CDATA[
+          return db.update("""delete from lite_api_info where id = #{id} """)
+        ]]></script>
+    </api>
+
+
+</api-group>
