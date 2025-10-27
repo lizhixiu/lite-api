@@ -82,5 +82,5 @@ coverage/
 data/lite-api/apibak/
 
 
-xclite-doc/node_modules
-xclite-doc/docs/.vuepress
+lite-doc/node_modules
+lite-doc/docs/.vuepress

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<api-group id="web" name="Web相关" path="/base/web">
+    <api id="validate" name="参数自动验证" method="GET" path="/validate">
+        <script><![CDATA[
+            return {};
+        ]]></script>
+    </api>
+    <api id="path" name="根据路径参数获取页面" method="POST" path="/{a}/{b}-{c}.html">
+        <script><![CDATA[
+            return {
+
+            a:path.a
+            ,b:path.b
+            ,c:path.c
+            ,aa
+            ,aaa:body.aaa
+            };
+        ]]></script>
+    </api>
+    <api id="param" name="获取请求参数" method="POST" path="/param">
+        <script><![CDATA[
+            import request;
+            // var file = request.getFile('file').getFileName();
+            return {
+            'Request': name,
+            'Header' : header.token,
+            //'RequestBody': body.data.id,
+            'Path' : path.id
+            ,'file' : file
+            }
+        ]]></script>
+    </api>
+</api-group>

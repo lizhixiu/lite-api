@@ -6,13 +6,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.xclite</groupId>
-    <artifactId>xclite-api-parent</artifactId>
-    <version>${revision}</version>
+    <artifactId>lite-api-parent</artifactId>
+    <version>2025.10.27</version>
     <packaging>pom</packaging>
 
-    <name>xclite</name>
+    <name>lite-api</name>
     <url>https://xclite.com</url>
-    <description>XCLite API Project</description>
+    <description>Lite API Project</description>
 
     <issueManagement>
         <system>Gitee Issue</system>
@@ -27,12 +27,12 @@
     </licenses>
 
     <modules>
-        <module>xclite-api</module>
-        <module>xclite-service</module>
+        <module>lite-api</module>
+        <module>lite-service</module>
     </modules>
 
     <properties>
-        <revision>2025.10.18</revision>
+        <revision>2025.10.27</revision>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -44,12 +44,15 @@
         <version.logback>1.2.13</version.logback>
         <version.slf4j>1.7.36</version.slf4j>
         <version.jfinal>5.2.7</version.jfinal>
+        <version.jfial-cos>2022.2</version.jfial-cos>
         <version.jfinal-undertow>3.8</version.jfinal-undertow>
-        <version.druid>1.2.20</version.druid>
+        <version.magic-script>1.9.0</version.magic-script>
+        <version.druid>1.2.27</version.druid>
         <version.mysql-connector>9.4.0</version.mysql-connector>
         <version.snakeyaml>2.0</version.snakeyaml>
-        <version.fastjson>1.2.83</version.fastjson>
-        <version.junit>4.12</version.junit>
+        <version.fastjson>2.0.60</version.fastjson>
+        <version.junit>4.13.1</version.junit>
+        <version.postgresql>42.7.8</version.postgresql>
     </properties>
 
     <repositories>
@@ -79,6 +82,20 @@
                 <groupId>com.jfinal</groupId>
                 <artifactId>jfinal-undertow</artifactId>
                 <version>${version.jfinal-undertow}</version>
+            </dependency>
+
+            <!-- cos 文件上传 -->
+            <dependency>
+                <groupId>com.jfinal</groupId>
+                <artifactId>cos</artifactId>
+                <version>${version.jfial-cos}</version>
+            </dependency>
+
+            <!-- magic-script -->
+            <dependency>
+                <groupId>org.ssssssss</groupId>
+                <artifactId>magic-script</artifactId>
+                <version>${version.magic-script}</version>
             </dependency>
 
             <!-- Druid -->
@@ -160,6 +177,13 @@
                 <groupId>org.slf4j</groupId>
                 <artifactId>jul-to-slf4j</artifactId>
                 <version>${version.slf4j}</version>
+            </dependency>
+
+            <!-- postgresql Connector -->
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${version.postgresql}</version>
             </dependency>
 
             <!-- JUnit -->

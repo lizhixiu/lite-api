@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<api-group id="response" name="response模块" path="/module/response">
+    <api id="test" name="测试1" method="GET" path="/test">
+        <script><![CDATA[
+            import response;
+            // 构建Json结果，结果不会经过框架包装处理。
+            return response.json({
+            ok: true
+            })
+            //直接返回该text，不会被包装处理
+            // return response.text('ok');
+        ]]></script>
+    </api>
+</api-group>
