@@ -54,6 +54,12 @@ Lite API 借鉴了 [Magic-API](https://gitee.com/ssssssss-team/magic-api) 的优
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 
 
+## 特别鸣谢
+
+Magic-api [https://gitee.com/ssssssss-team/magic-api](https://gitee.com/ssssssss-team/magic-api)
+JFinal [https://gitee.com/jfinal/jfinal](https://gitee.com/jfinal/jfinal)
+SCUI [https://lolicode.gitee.io/scui-doc/](https://lolicode.gitee.io/scui-doc/)   
+GITEE [https://gitee.com/](https://gitee.com/)
 
 ## 交流
 

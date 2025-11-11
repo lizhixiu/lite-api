@@ -35,17 +35,8 @@ public class PermissionInterceptor implements RequestInterceptor {
 
     @Override
     public Object preHandle(RequestEntity requestEntity) {
-//        if (requestEntity.getRequestBody() instanceof Map)
-//            requestEntity.getMagicScriptContext().putMapIntoContext((Map<String, Object>) requestEntity.getRequestBody());
-//        Redis.use().get("key", "value");
         if (requestEntity.getRequest().getHeader("Token") != null && Redis.use().get(requestEntity.getRequest().getHeader("Token").replace("Bearer ", "")) != null) {
             Object user = Redis.use().get(requestEntity.getRequest().getHeader("Token").replace("Bearer ", ""));
-//             log.info(JSONUtil.toJsonStr(user));
-//            if (requestEntity.getRequestBody() instanceof LinkedHashMap) {
-//                log.info("requestEntity.getRequestBody()"+JSONUtil.toJsonStr(user));
-//                LinkedHashMap<String, Object> linkedHashMap = (LinkedHashMap<String, Object>) requestEntity.getRequestBody();
-//                linkedHashMap.put("SESSION_USER", user);
-//            }
             requestEntity.getMagicScriptContext().set("SESSION_USER", user);
         }
         // 待增加参数规则判断
@@ -57,20 +48,6 @@ public class PermissionInterceptor implements RequestInterceptor {
      */
     @Override
     public Object preHandle(ApiInfo info, MagicScriptContext context, LiteHttpServletRequest request, LiteHttpServletResponse response) {
-        //    String requireLogin = Objects.toString(info.getOptionValue(Options.REQUIRE_LOGIN), "");
-        //    if(requireLogin.equals("false")){
-        //        return null;
-        //    }
-        //    if(!StpUtil.isLogin()){
-        //        return StatusCode.CERTIFICATE_EXPIRED.json();
-        //    } else {
-        //        // TODO
-        //        List<String> permissions = (List<String>) magicAPIService.execute("post", "/system/security/permissions", new HashMap<String, Object>());
-        //        String permission = Objects.toString(info.getOptionValue(Options.PERMISSION), "");
-        //        if (StringUtils.isNotBlank(permission) && !permissions.contains(permission)) {
-        //            return StatusCode.FORBIDDEN.json();
-        //        }
-        //    }
         return null;
     }
 
