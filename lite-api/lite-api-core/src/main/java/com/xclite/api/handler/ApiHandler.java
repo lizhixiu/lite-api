@@ -206,11 +206,11 @@ public class ApiHandler extends Handler {
             // 设置 path 变量
             context.set(VAR_NAME_PATH_VARIABLE, requestEntity.getPathVariables());
             // 设置 body 变量
-            if (bodyValue instanceof String ) {
+            if (bodyValue instanceof String) {
                 Map<String, Object> map = new HashMap<>();
                 map.put("content", bodyValue);
                 context.set(VAR_NAME_REQUEST_BODY, map);
-            }else if (bodyValue !=null ) {
+            } else if (bodyValue != null) {
                 context.set(VAR_NAME_REQUEST_BODY, bodyValue);
             }
         } catch (ValidateException e) {

@@ -19,7 +19,6 @@ package com.xclite.boot.admin.config;
 
 import com.jfinal.config.*;
 import com.jfinal.json.FastJsonFactory;
-import com.jfinal.kit.Prop;
 import com.jfinal.kit.PropKit;
 import com.jfinal.plugin.redis.RedisPlugin;
 import com.jfinal.plugin.redis.serializer.FstSerializer;
@@ -32,7 +31,7 @@ import com.xclite.api.web.routes.LiteRoutes;
 import com.xclite.boot.admin.interceptor.PageInterceptor;
 import com.xclite.boot.admin.interceptor.PermissionInterceptor;
 import com.xclite.boot.admin.script.function.HutoolFunction;
-import com.xclite.boot.admin.script.function.XcliteFunction;
+import com.xclite.boot.admin.script.function.LiteFunction;
 
 public class AdminConfig extends JFinalConfig {
 
@@ -68,7 +67,7 @@ public class AdminConfig extends JFinalConfig {
         apiPlugin.addRequestInterceptor(new PageInterceptor());
         apiPlugin.addRequestInterceptor(new PermissionInterceptor());
         apiPlugin.addFunction(new HutoolFunction());
-        apiPlugin.addFunction(new XcliteFunction());
+        apiPlugin.addFunction(new LiteFunction());
 
         me.add(apiPlugin);
     }
