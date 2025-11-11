@@ -6,7 +6,7 @@
     <parent>
         <groupId>com.xclite</groupId>
         <artifactId>lite-api-parent</artifactId>
-        <version>2025.10.27</version>
+        <version>2025.11.11</version>
     </parent>
     <artifactId>lite-boot-service</artifactId>
     <packaging>pom</packaging>

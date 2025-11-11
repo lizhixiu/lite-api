@@ -17,6 +17,9 @@ Lite API 借鉴了 [Magic-API](https://gitee.com/ssssssss-team/magic-api) 的优
 - **分页查询**：支持分页查询以及自定义分页查询
 - **SQL 缓存**：支持 SQL 缓存，以及自定义 SQL 缓存
 
+### lite-boot 演示地址
+访问 [演示地址](http://lite-boot.demoeg.com:8090/scui/index.html#/login)
+
 ### 文档地址
 访问 [Lite API 文档](http://lite-api.demoeg.com/)
 
