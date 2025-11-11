@@ -23,6 +23,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+/**
+ * 版本工具类
+ *
+ * @author zhixiulee
+ */
 @Slf4j
 public class VersionUtils {
     public static String getVersion() {

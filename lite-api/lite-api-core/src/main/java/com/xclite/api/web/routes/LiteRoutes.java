@@ -20,6 +20,11 @@ package com.xclite.api.web.routes;
 import com.jfinal.config.Routes;
 import com.xclite.api.web.action.LiteApiAction;
 
+/**
+ * API路由配置类
+ *
+ * @author zhixiulee
+ */
 public class LiteRoutes extends Routes {
     @Override
     public void config() {
