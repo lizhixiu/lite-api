@@ -7,7 +7,7 @@
 
     <groupId>com.xclite</groupId>
     <artifactId>lite-api-parent</artifactId>
-    <version>2025.10.27</version>
+    <version>2025.11.11</version>
     <packaging>pom</packaging>
 
     <name>lite-api</name>
@@ -29,10 +29,11 @@
     <modules>
         <module>lite-api</module>
         <module>lite-service</module>
+        <module>lite-boot-service</module>
     </modules>
 
     <properties>
-        <revision>2025.10.27</revision>
+        <revision>2025.11.11</revision>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

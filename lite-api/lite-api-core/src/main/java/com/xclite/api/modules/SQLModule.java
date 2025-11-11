@@ -354,7 +354,7 @@ public class SQLModule implements DynamicAttribute<SQLModule, SQLModule>, Dynami
     public Object selectValue(RuntimeContext runtimeContext, @Comment(name = "sqlOrXml", value = "`SQL`语句或`xml`") String sqlOrXml, @Comment(name = "params", value = "变量信息") Map<String, Object> params) {
 //        assertDatasourceNotNull();
         BoundSql boundSql = new BoundSql(runtimeContext, sqlOrXml, params, this);
-        return boundSql.execute(this.sqlInterceptors, () -> getDb().query(boundSql.getSql(), boundSql.getParameters()));
+        return boundSql.execute(this.sqlInterceptors, () -> getDb().queryFirst(boundSql.getSql(), boundSql.getParameters()));
     }
 
     /**

@@ -32,6 +32,7 @@ import org.ssssssss.script.runtime.RuntimeContext;
 
 import java.io.Serializable;
 import java.util.*;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 public class NamedTable {
@@ -68,7 +69,7 @@ public class NamedTable {
 
         this.useLogic = sqlModule.isLogicDelete();
 
-        if(this.useLogic) {
+        if (this.useLogic) {
             this.logicDeleteColumn = sqlModule.getLogicDeleteColumn();
             String deleteValue = sqlModule.getLogicDeleteValue();
             this.logicDeleteValue = deleteValue;
@@ -144,10 +145,35 @@ public class NamedTable {
                 record.set(columnMapperAdapter.getDefault().unmapping(entry.getKey()), v);
             }
         }
-        if (record.getColumns().isEmpty()) {
+
+
+        if (data != null) {
+            data.forEach((key, value) -> this.columns.put(columnMapperAdapter.getDefault().unmapping(key), value));
+        }
+        if (this.defaultPrimaryValue != null && StrUtil.isBlank(Objects.toString(this.columns.getOrDefault(this.primary, "")))) {
+            if (this.defaultPrimaryValue instanceof Supplier) {
+                this.columns.put(this.primary, ((Supplier<?>) this.defaultPrimaryValue).get());
+            } else {
+                this.columns.put(this.primary, this.defaultPrimaryValue);
+            }
+        }
+        preHandle(SqlMode.INSERT);
+        Collection<Map.Entry<String, Object>> entries = filterNotBlanks();
+        if (entries.isEmpty()) {
             throw new LiteApiException("参数不能为空");
         }
-        return Db.save(tableName, record);
+        String builder = "insert into " +
+                tableName +
+                "(" +
+                StrUtil.join(",", entries.stream().map(Map.Entry::getKey).toArray()) +
+                ") values (" +
+                StrUtil.join(",", Collections.nCopies(entries.size(), "?")) +
+                ")";
+        Object value = sqlModule.insert(new BoundSql(runtimeContext, builder, entries.stream().map(Map.Entry::getValue).collect(Collectors.toList()), sqlModule), this.primary);
+        if (value == null && StrUtil.isNotBlank(this.primary)) {
+            return this.columns.get(this.primary);
+        }
+        return value;
     }
 
     @Comment("执行插入,返回主键")
@@ -380,7 +406,7 @@ public class NamedTable {
             throw new LiteApiException("请设置主键");
         }
         if (data != null) {
-            this.columns.putAll(data);
+            data.forEach((key, value) -> this.columns.put(columnMapperAdapter.getDefault().unmapping(key), value));
         }
         Object primaryValue = this.columns.get(this.primary);
         if (data != null && StrUtil.isBlank(Objects.toString(primaryValue, ""))) {
@@ -390,7 +416,7 @@ public class NamedTable {
             if (primaryValue != null && StrUtil.isNotBlank(Objects.toString(primaryValue))) {
                 List<Object> params = new ArrayList<>();
                 params.add(primaryValue);
-                Integer count = Db.queryInt("select count(*) count from " + this.tableName + " where " + this.primary + " = ?", params);
+                Integer count = sqlModule.selectInt(new BoundSql(runtimeContext, "select count(*) count from " + this.tableName + " where " + this.primary + " = ?", params, sqlModule));
                 if (count == 0) {
                     return insert(runtimeContext, data);
                 }

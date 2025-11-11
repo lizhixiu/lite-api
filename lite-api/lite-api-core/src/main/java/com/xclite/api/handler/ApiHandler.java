@@ -70,6 +70,7 @@ public class ApiHandler extends Handler {
     private static final LiteApiProperties liteApiProperties = PLUGIN.getLiteApiProperties();
     private static final List<RequestInterceptor> requestInterceptors = PLUGIN.getRequestInterceptors();
     private static final ResultProvider resultProvider = PLUGIN.getResultProvider();
+    private static final String METHOD_OPTIONS = "OPTIONS";
 
 
     public ApiHandler() {
@@ -110,6 +111,18 @@ public class ApiHandler extends Handler {
 
         try {
             LiteJavaEERequestContextHolder.setRequestContext(request, response);
+
+            // 默认增加跨域处理操作，处理OPTIONS请求
+            response.addHeader("Access-Control-Allow-Origin", "*"); // 允许所有来源，或者指定特定的来源
+            response.addHeader("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE,PATCH,OPTIONS");
+            response.addHeader("Access-Control-Allow-Headers", "Origin,X-Requested-With,Content-Type,Accept,Authorization,Jwt,token");
+
+            if (METHOD_OPTIONS.equals(request.getMethod())) {
+                Render render = RenderManager.me().getRenderFactory().getTextRender("");
+                render.setContext(request, response);
+                render.render();
+                return;
+            }
 
             // 尝试匹配动态API路径
             ApiInfo apiInfo = ApiPathMatcher.match(target, request.getMethod());
@@ -193,7 +206,11 @@ public class ApiHandler extends Handler {
             // 设置 path 变量
             context.set(VAR_NAME_PATH_VARIABLE, requestEntity.getPathVariables());
             // 设置 body 变量
-            if (bodyValue != null) {
+            if (bodyValue instanceof String ) {
+                Map<String, Object> map = new HashMap<>();
+                map.put("content", bodyValue);
+                context.set(VAR_NAME_REQUEST_BODY, map);
+            }else if (bodyValue !=null ) {
                 context.set(VAR_NAME_REQUEST_BODY, bodyValue);
             }
         } catch (ValidateException e) {
