@@ -29,6 +29,7 @@
     <modules>
         <module>lite-api</module>
         <module>lite-service</module>
+        <module>lite-boot-service</module>
     </modules>
 
     <properties>

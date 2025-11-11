@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.xclite</groupId>
+        <artifactId>lite-api-parent</artifactId>
+        <version>2025.10.27</version>
+    </parent>
+    <artifactId>lite-boot-service</artifactId>
+    <packaging>pom</packaging>
+    <name>xclite-service</name>
+    <description>xclite service</description>
+    <modules>
+        <module>lite-boot-service-admin</module>
+    </modules>
+</project>
