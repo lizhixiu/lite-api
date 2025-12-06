@@ -326,10 +326,10 @@
             """
                 select * from
                 (
-                    select a.id,a.id org_id,a.name_txt name,a.code_txt code,'ORG' type,pid,(10000+a.rec_sort_num) rec_sort_num from lite_org a
+                    select a.id,a.id org_id,a.name_txt,a.code_txt code,'ORG' type,pid,(10000+a.rec_sort_num) rec_sort_num from lite_org a
 
                     union all
-                    select a.id,a.org_id org_id,a.name_txt name,a.code_txt code,'DEPT' type,case when a.pid=a.org_id then a.org_id else a.pid end pid,a.rec_sort_num from lite_dept a
+                    select a.id,a.org_id org_id,a.name_txt,a.code_txt code,'DEPT' type,case when a.pid=a.org_id then a.org_id else a.pid end pid,a.rec_sort_num from lite_dept a
 
                 ) a
                 order by a.rec_sort_num
