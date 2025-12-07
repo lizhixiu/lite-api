@@ -17,6 +17,9 @@ Lite API 借鉴了 [Magic-API](https://gitee.com/ssssssss-team/magic-api) 的优
 - **分页查询**：支持分页查询以及自定义分页查询
 - **SQL 缓存**：支持 SQL 缓存，以及自定义 SQL 缓存
 
+### lite-boot-vben 演示地址
+访问 [演示地址](http://lite-api.demoeg.com:8090/vben/index.html#/auth/login)
+
 ### lite-boot 演示地址
 访问 [演示地址](http://lite-boot.demoeg.com:8090/scui/index.html#/login)
 
@@ -59,6 +62,7 @@ Lite API 借鉴了 [Magic-API](https://gitee.com/ssssssss-team/magic-api) 的优
 Magic-api [https://gitee.com/ssssssss-team/magic-api](https://gitee.com/ssssssss-team/magic-api)   
 JFinal [https://gitee.com/jfinal/jfinal](https://gitee.com/jfinal/jfinal)   
 SCUI [https://lolicode.gitee.io/scui-doc/](https://lolicode.gitee.io/scui-doc/)   
+VBEN [https://doc.vben.pro/](https://doc.vben.pro/)   
 GITEE [https://gitee.com/](https://gitee.com/)
 
 ## 交流
