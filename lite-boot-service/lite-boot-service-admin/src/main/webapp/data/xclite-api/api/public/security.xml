@@ -22,6 +22,7 @@
             }
         ]]></script>
     </api>
+
     <api id="login" name="1000.登录" caption="1000.登录" method="POST" path="/login">
         <script><![CDATA[
             import com.xclite.boot.admin.utils.AddressUtil;
@@ -134,6 +135,39 @@
                 };
             
             return data;
+        ]]></script>
+    </api>
+
+
+    <api id="codes" name="1002.授权码" caption="1002.授权码" method="GET" path="/codes">
+        <script><![CDATA[
+            return [];
+        ]]></script>
+    </api>
+
+    <api id="user/info" name="1002.授权码" caption="1002.授权码" method="GET" path="/user/info">
+        <script><![CDATA[
+            return [];
+        ]]></script>
+    </api>
+
+    <api caption="1003.获取用户信息" id="userInfo" name="1003.获取用户信息" method="GET" path="/user/info">
+        <script><![CDATA[
+         return  {
+            "id": SESSION_USER.id,
+            "realName": SESSION_USER.nameTxt,
+            "roles": [
+              "super"
+            ],
+            "username": SESSION_USER.loginCodeTxt
+          };
+        ]]></script>
+    </api>
+
+
+    <api id="logout" name="1004.退出登录" caption="1004.退出登录" method="POST" path="/logout">
+        <script><![CDATA[
+            return {};
         ]]></script>
     </api>
 </api-group>
